@@ -10,9 +10,8 @@ Alessandro Amici, B-Open, Rome
 ### Motivation: Climate and forecast data
 
  * Copernicus Climate Change Service, by ECMWF:
-   * Re-analysis, seasonal forecasts, climate projections, satellite and in-situ observations
+   * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
    * N-dimensional gridded data in many dialects of NetCDF and GRIB
-   * Point data in NetCDF format (?)
    * Archive: Climate Data Store (CDS)
 
 ---
@@ -20,10 +19,10 @@ Alessandro Amici, B-Open, Rome
 ### Motivation: Climate and forecast data
 
  * ECMWF:
-   * Weather forecasts, re-analysis, satellite and in-situ observations
+   * Weather forecasts, re-analyses, satellite and in-situ observations
    * N-dimensional gridded data in GRIB
-   * Point data in BUFR and ODB
    * Archive: Meteorological Archival and Retrieval System (MARS)
+   * A lot of tools: Metview, Magics, ecCodes...
 
 ---
 
