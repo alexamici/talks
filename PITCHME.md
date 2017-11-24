@@ -38,11 +38,12 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic needs
 
- * pythonisation pf ECMWF tools
-   * xarray GRIB driver  @fa[git-square]
-   * python bindings
-     * Metview, Python 3  @fa[git-square]
-     * Magics, Python 2/3 @fa[check-square]
+ * pythonisation of ECMWF data and tools
+   * xarray GRIB driver (depends on ecCodes) @fa[git-square]
+   * high level python bindings
+     * Metview @fa[git-square], Magics @fa[check-square]
+   * low level python bindings
+     * ecCodes @fa[check-square], odb-api @fa[check-square]
 
 ---
 
