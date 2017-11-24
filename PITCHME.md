@@ -28,7 +28,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic choices
 
- * Python programming language
+ * Python 3 programming language
  * `xarray.DataArray` data structure
    * coordinates harmonisation
      * matching labels, units and values
@@ -38,8 +38,18 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic needs
 
- * CDS common data model
+ * ECMWF tools pythonisation
    * xarray GRIB driver
+   * python bindings
+     * Metview, Python 3 (on going)
+     * Magics, Python 2/3 (production)
+     * eCcodes, Python 2/3 (production)
+
+---
+
+### Harmonisation strategic needs
+
+ * CDS common data model
    * importer and compliance checker for NetCDF
  * CF Conventions aware variables operations
    * use metadata
@@ -48,6 +58,7 @@ Alessandro Amici, B-Open, Rome
      * update attributes (e.g. units), track provenance...
 
 ---
+
 
 ### Thank you!
 
