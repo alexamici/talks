@@ -39,18 +39,18 @@ Alessandro Amici, B-Open, Rome
 ### Harmonisation strategic needs
 
  * pythonisation pf ECMWF tools
-   * xarray GRIB driver  @fa[bitbucket-square](on going)
+   * xarray GRIB driver  @fa[bitbucket-square]
    * python bindings
-     * Metview, Python 3  @fa[bitbucket-square](on going)
-     * Magics, Python 2/3 @fa[check-square-o](done)
+     * Metview, Python 3  @fa[bitbucket-square]
+     * Magics, Python 2/3 @fa[check-square-o]
 
 ---
 
 ### Harmonisation strategic needs
 
- * CDS common data model
-   * importer and compliance checker @fa[bitbucket-square](on going)
- * CF Conventions aware variables operations @fa[bitbucket-square](on going)
+ * CDS common data model @fa[bitbucket-square]
+   * importer and compliance checker
+ * CF Conventions aware variables operations @fa[bitbucket-square]
    * use metadata
      * units conversion, plot labeling...
    * add metadata to results
