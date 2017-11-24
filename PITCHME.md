@@ -38,14 +38,14 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic needs
 
- * Common data model
+ * CDS common data model
    * xarray GRIB driver
-   * compliance checker and importer
+   * importer and compliance checker for NetCDF
  * CF Conventions aware variables operations
    * use metadata
      * units conversion, plot labeling...
    * add metadata to results
-     * combine units, collate attribute, track provenance...
+     * update attributes (e.g. units), track provenance...
 
 ---
 
