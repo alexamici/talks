@@ -7,15 +7,6 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Motivation: climate data
-
- * Copernicus Climate Change Service, by ECMWF:
-   * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
-   * N-dimensional gridded data in many dialects of NetCDF and GRIB
-   * Archive: Climate Data Store (CDS)
-
----
-
 ### Motivation: forecast data and tools
 
  * ECMWF:
@@ -23,6 +14,15 @@ Alessandro Amici, B-Open, Rome
    * N-dimensional gridded data in GRIB
    * Archive: Meteorological Archival and Retrieval System (MARS)
    * A lot of tools: Metview, Magics, ecCodes...
+
+---
+
+### Motivation: climate data
+
+ * Copernicus Climate Change Service, by ECMWF:
+   * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
+   * N-dimensional gridded data in many dialects of NetCDF and GRIB
+   * Archive: Climate Data Store (CDS)
 
 ---
 
@@ -38,20 +38,19 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic needs
 
- * ECMWF tools pythonisation
-   * xarray GRIB driver
+ * pythonisation pf ECMWF tools
+   * xarray GRIB driver  @fa[bitbucket-square](on going)
    * python bindings
-     * Metview, Python 3 (on going)
-     * Magics, Python 2/3 (production)
-     * eCcodes, Python 2/3 (production)
+     * Metview, Python 3  @fa[bitbucket-square](on going)
+     * Magics, Python 2/3 @fa[check-square-o](done)
 
 ---
 
 ### Harmonisation strategic needs
 
  * CDS common data model
-   * importer and compliance checker for NetCDF
- * CF Conventions aware variables operations
+   * importer and compliance checker @fa[bitbucket-square](on going)
+ * CF Conventions aware variables operations @fa[bitbucket-square](on going)
    * use metadata
      * units conversion, plot labeling...
    * add metadata to results
@@ -59,6 +58,9 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
+### 
+
+---
 
 ### Thank you!
 
