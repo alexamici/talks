@@ -1,6 +1,5 @@
 
-# A common data model approach to NetCDF and GRIB data harmonisation
-
+## A common data model approach to NetCDF and GRIB data harmonisation
 
 Alessandro Amici, B-Open, Rome
 
@@ -9,7 +8,6 @@ Alessandro Amici, B-Open, Rome
 ---
 
 ## Strategic choices
-
 
  * Python programming language
  * `xarray.DataArray` as founding data structure
