@@ -7,6 +7,19 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
+ * Copernicus Climate Change Service, entrusted to ECMWF
+   * Re-analysis, seasonal forecasts, climate projections, observations
+   * N-dimensional gridded data in many dialects of NetCDF
+   * Point data in NetCDF format (?)
+   * Archive: Climate Data Store (CDS)
+ * ECMWF
+   * Weather forecasts, satellite and in-situ observations
+   * N-dimensional gridded data in GRIB
+   * Point data in BUFR and ODB
+   * Archive: Meteorological Archival and Retrieval System (MARS)
+
+---
+
 ## Strategic choices
 
  * Python programming language
