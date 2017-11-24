@@ -26,22 +26,16 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Strategic choices
+### Harmonisation strategic choices
 
  * Python programming language
- * `xarray.DataArray` as founding data structure
-
-```python
->>> import xarray as xr
->>> data = xr.open_dataarray('ERA5.nc')
->>> data
-
-```
+ * `xarray.DataArray` data structure
+   * matching coordinate labels, units and centre values
+   * standardised metadata / CF Conventions
 
 ---
 
 ### Thank you!
-
 
 Alessandro Amici, B-Open, Rome
 
