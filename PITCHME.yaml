@@ -1,1 +1,2 @@
-background : assets/bg.png
+background: assets/bg.png
+background-size: contain
