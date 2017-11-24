@@ -7,6 +7,8 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
+## Motivation: Climate and forecasts data
+
  * Copernicus Climate Change Service, entrusted to ECMWF
    * Re-analysis, seasonal forecasts, climate projections, observations
    * N-dimensional gridded data in many dialects of NetCDF
