@@ -26,7 +26,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Strategic choices
+### Harmonisation strategic choices
 
  * Python programming language
  * `xarray.DataArray` data structure
@@ -36,8 +36,11 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Strategic needs
+### Harmonisation strategic needs
 
+ * Common data model
+   * xarray GRIB driver
+   * compliance checker and importer
  * CF Conventions aware variables operations
    * use metadata
      * units conversion, plot labeling...
