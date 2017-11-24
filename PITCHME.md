@@ -7,7 +7,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Motivation: Climate and forecast data
+### Motivation: climate data
 
  * Copernicus Climate Change Service, by ECMWF:
    * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
@@ -16,7 +16,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Motivation: Climate and forecast data
+### Motivation: forecast data and tools
 
  * ECMWF:
    * Weather forecasts, re-analyses, satellite and in-situ observations
@@ -26,12 +26,23 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Harmonisation strategic choices
+### Strategic choices
 
  * Python programming language
  * `xarray.DataArray` data structure
-   * matching coordinate labels, units and centre values
+   * coordinates harmonisation
+     * matching labels, units and values
    * standardised metadata / CF Conventions
+
+---
+
+### Strategic needs
+
+ * CF Conventions aware variables operations
+   * use metadata
+     * units conversion, plot labeling...
+   * add metadata to results
+     * combine units, collate attribute, track provenance...
 
 ---
 
