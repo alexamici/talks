@@ -1,5 +1,5 @@
 
-## A common data model approach to NetCDF and GRIB data harmonisation
+### A common data model approach to NetCDF and GRIB data harmonisation
 
 Alessandro Amici, B-Open, Rome
 
@@ -7,7 +7,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-## Motivation: Climate and forecasts data
+### Motivation: Climate and forecasts data
 
  * Copernicus Climate Change Service, entrusted to ECMWF
    * Re-analysis, seasonal forecasts, climate projections, observations
@@ -22,7 +22,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-## Strategic choices
+### Strategic choices
 
  * Python programming language
  * `xarray.DataArray` as founding data structure
@@ -36,7 +36,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-## Thank you!
+### Thank you!
 
 
 Alessandro Amici, B-Open, Rome
