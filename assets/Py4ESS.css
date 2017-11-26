@@ -3,3 +3,7 @@
     font-size: 75%;
     line-height: 90%;
 }
+
+.reveal .small {
+    font-size: 50%;
+}
