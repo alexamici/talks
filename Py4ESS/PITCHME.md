@@ -41,9 +41,8 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ---
 
-### xarray.DataArray data model
+### ECMWF NetCDF dilect
 
-ECMWF NetCDF dilect
 
 ```python
 >>> import xarray as xr
@@ -63,9 +62,7 @@ Attributes:
 ```
 ---
 
-### xarray.DataArray data model
-
-CMIP5 NetCDF dilect
+### CMIP5 NetCDF dilect
 
 ```python
 >>> ta_CMIP5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc', chunks={}).ta
