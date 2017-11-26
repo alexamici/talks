@@ -1,10 +1,12 @@
 
 ### A common data model approach to NetCDF and GRIB data harmonisation
-#### Workshop on developing Python frameworks for earth system sciences, 2017-11-28, Reading.
+
 
 Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
+
+Workshop on developing Python frameworks for earth system sciences, 2017-11-28, Reading.
 
 ---
 
