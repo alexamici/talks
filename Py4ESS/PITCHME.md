@@ -6,7 +6,9 @@ Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
-<span style='font-size: 50%;'>Workshop on developing Python frameworks for earth system sciences, 2017-11-28, ECMWF, Reading.</span>
+<span style='font-size: 50%;'>
+Workshop on developing Python frameworks for earth system sciences, 2017-11-28, ECMWF, Reading.
+</span>
 
 ---
 
@@ -82,4 +84,6 @@ Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
-<span style='font-size: 50%;'>Slides: https://gitpitch.com/alexamici/talks/master?p=Py4ESS</span>
+<span style='font-size: 50%;'>
+Slides: https://gitpitch.com/alexamici/talks/master?p=Py4ESS
+</span>
