@@ -57,7 +57,18 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### 
+### Examples
+
+---
+
+### Credits and teams
+
+ * Coordinators: S. Siemen, B. Rault, C. Bergeron and A. Amici
+ * Developers and scientific advisers:
+   * metview-python: I. Russell and M. Di Bari
+   * xarray-grib-driver: A. Amici and L. Barcaroli
+   * cds-cmor-tables: F. Fierli, C. Cagnazzo and G. Cammarota
+   * cdstools: G. Cammarota and F. Nazzaro
 
 ---
 
