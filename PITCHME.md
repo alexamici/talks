@@ -19,7 +19,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Motivation: climate data
 
- * Copernicus Climate Change Service, by ECMWF:
+ * Copernicus Climate Change Service (C3S), by ECMWF:
    * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
    * N-dimensional gridded data in many dialects of NetCDF and GRIB
    * Archive: Climate Data Store (CDS)
@@ -28,7 +28,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic choices
 
- * Python 3 programming language
+ * Python programming language
  * `xarray.DataArray` data structure
    * coordinates harmonisation
      * matching labels, units and values
@@ -36,7 +36,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Harmonisation strategic needs
+### ECMWF harmonisation strategy
 
  * pythonisation of ECMWF data and tools
    * xarray GRIB driver (depends on ecCodes) @fa[git-square]
@@ -47,15 +47,14 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Harmonisation strategic needs
+### C3S harmonisation strategy
 
+ * Climate Data Store
  * CDS common data model @fa[git-square]
    * importer and compliance checker
  * CF Conventions aware variables operations @fa[git-square]
-   * use metadata
-     * units conversion, plot labeling...
-   * add metadata to results
-     * update attributes (e.g. units), track provenance...
+   * use metadata for units conversion, plot labeling...
+   * add metadata to results, update attributes (e.g. units), track provenance...
 
 ---
 
