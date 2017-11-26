@@ -34,10 +34,12 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 ### Harmonisation strategic choices
 
  * Python 3 programming language
- * `xarray.DataArray` data structure
-   * coordinates harmonisation
-     * matching labels, units and values
-   * standardised metadata / CF Conventions
+   * scientific ecosystems
+ * `xarray` data structures
+   * NetCDF data model: variables and coordinates
+   * support for arbitrary metadata
+   * CF Conventions support on IO
+   * label-matching broadcast rules on coodrdinates
 
 ---
 
@@ -122,6 +124,16 @@ Coordinates:
 
 ---
 
+### Harmonization beyond `xarray`
+
+ * `xarray.DataArray` data structure
+   * GRIB as first class citizen
+   * coordinates harmonisation
+     * matching labels, units and centre values (e.g same grid)
+   * more advanced use of metadata / CF Conventions
+
+---
+
 ### ECMWF harmonisation projects
 
  * pythonisation of ECMWF data and tools
@@ -148,8 +160,8 @@ Coordinates:
 ```python
 >>> import xarray_grib
 >>> store = xarray_grib.GribDataStore('forecast.grib')
->>> forecast = xr.open_dataset(store)
->>> forecast.t
+>>> ta_grib = xr.open_dataset(store)
+>>> ta_grib
 DataArray()
 ```
 
