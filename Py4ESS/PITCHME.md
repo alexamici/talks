@@ -65,12 +65,12 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 ### xarray-grib-driver
 
 ```python
-import xarray as xr
-import xarray_grib
-
-store = xarray_grib.GribDataStore('forecast.grib')
-forecast = xr.open_dataset(store)
-t = forecast.t
+>>> import xarray as xr
+>>> import xarray_grib
+>>> store = xarray_grib.GribDataStore('forecast.grib')
+>>> forecast = xr.open_dataset(store)
+>>> forecast.t
+DataArray()
 ```
 
 ---
