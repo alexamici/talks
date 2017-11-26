@@ -39,7 +39,7 @@ Alessandro Amici, B-Open, Rome
 ### ECMWF harmonisation projects
 
  * pythonisation of ECMWF data and tools
-   * xarray GRIB driver (depends on ecCodes) @fa[git-square]
+   * xarray GRIB driver (uses ecCodes) @fa[git-square]
    * high level python bindings
      * Metview @fa[git-square], Magics @fa[check-square]
    * low level python bindings
@@ -50,7 +50,7 @@ Alessandro Amici, B-Open, Rome
 ### C3S harmonisation projects
 
  * CDS common data model @fa[git-square]
-   * importer and compliance checker
+   * definition, importer and compliance checker
  * CF Conventions aware variables operations @fa[git-square]
    * use metadata for units conversion, plot labeling...
    * add metadata to results, update attributes (e.g. units), track provenance...
@@ -61,7 +61,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### Credits and teams
+### Teams and Credits
 
  * Coordinators: B. Rault (ECMEF / C3S), S. Siemen (ECMWF), C. Bergeron (C3S) and A. Amici
  * Developers and scientific advisers:
@@ -73,6 +73,7 @@ Alessandro Amici, B-Open, Rome
 ---
 
 ### Thank you!
+#### Do we have time for questions?
 
 Alessandro Amici, B-Open, Rome
 
