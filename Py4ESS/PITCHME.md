@@ -64,6 +64,25 @@ Attributes:
 
 ---
 
+### xarray.DataArray
+
+```python
+>>> xr.open_dataset('ERA5-tuv-europe.nc', chunks={})
+<xarray.DataArray 't' (time: 4, level: 5, latitude: 42, longitude: 73)>
+dask.array<open_dataset-..., shape=(4, 5, 42, 73), dtype=float64, chunksize=(4, 5, 42, 73)>
+Coordinates:
+  * longitude  (longitude) float32 -27.0 -26.0 -25.0 -24.0 -23.0 -22.0 -21.0 ...
+  * latitude   (latitude) float32 74.0 73.0 72.0 71.0 70.0 69.0 68.0 67.0 ...
+  * level      (level) int32 300 500 700 850 1000
+  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
+Attributes:
+    units:          K
+    long_name:      Temperature
+    standard_name:  air_temperature
+```
+
+---
+
 ### ECMWF harmonisation projects
 
  * pythonisation of ECMWF data and tools
