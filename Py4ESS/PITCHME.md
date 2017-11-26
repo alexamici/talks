@@ -62,7 +62,16 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ---
 
-### Examples
+### xarray-grib-driver
+
+```python
+import xarray as xr
+import xarray_grib
+
+store = xarray_grib.GribDataStore('forecast.grib')
+forecast = xr.open_dataset(store)
+t = forecast.t
+```
 
 ---
 
@@ -85,5 +94,5 @@ Alessandro Amici, B-Open, Rome
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
 <span style='font-size: 50%;'>
-Slides: https://gitpitch.com/alexamici/talks/master?p=Py4ESS
+Slides: https://gitpitch.com/alexamici/talks
 </span>
