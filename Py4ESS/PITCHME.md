@@ -58,14 +58,8 @@ Attributes:
     units:          K
     long_name:      Temperature
     standard_name:  air_temperature
->>> ta_era5.level
-<xarray.DataArray 'level' (level: 5)>
-array([ 300,  500,  700,  850, 1000], dtype=int32)
-Coordinates:
-  * level    (level) int32 300 500 700 850 1000
-Attributes:
-    units:      millibars
-    long_name:  pressure_level
+>>> ta_era5.level.attrs['units']
+'millibars'
 ```
 ---
 
@@ -89,17 +83,8 @@ Attributes:
     cell_measures:     area: areacella
     associated_files:  baseURL: http://cmip-pcmdi.llnl.gov/CMIP5/dataLocation...
     history:           2012-04-13T21:01:28Z altered by CMOR: Inverted axis: lat.
->>> ta_cmip5.plev
-<xarray.DataArray 'plev' (plev: 3)>
-array([ 85000.,  50000.,  25000.])
-Coordinates:
-  * plev     (plev) float64 8.5e+04 5e+04 2.5e+04
-Attributes:
-    units:          Pa
-    axis:           Z
-    positive:       down
-    long_name:      pressure
-    standard_name:  air_pressure
+>>> ta_cmip5.plev.attrs['units']
+'Pa'
 ```
 
 ---
