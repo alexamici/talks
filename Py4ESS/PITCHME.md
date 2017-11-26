@@ -41,6 +41,29 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ---
 
+### xarray data model
+
+```python
+>>> import xarray as xr
+>>> xr.open_dataset('ERA5-tuv.nc')
+<xarray.Dataset>
+Dimensions:    (latitude: 42, level: 5, longitude: 73, time: 4)
+Coordinates:
+  * longitude  (longitude) float32 -27.0 -26.0 -25.0 -24.0 -23.0 -22.0 -21.0 ...
+  * latitude   (latitude) float32 74.0 73.0 72.0 71.0 70.0 69.0 68.0 67.0 ...
+  * level      (level) int32 300 500 700 850 1000
+  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
+Data variables:
+    t          (time, level, latitude, longitude) float64 220.6 220.8 221.0 ...
+    u          (time, level, latitude, longitude) float64 -11.93 -12.68 ...
+    v          (time, level, latitude, longitude) float64 5.13 6.681 8.024 ...
+Attributes:
+    Conventions:  CF-1.6
+    history:      2017-11-26 11:12:39 GMT by grib_to_netcdf-2.5.0: grib_to_ne...
+```
+
+---
+
 ### ECMWF harmonisation projects
 
  * pythonisation of ECMWF data and tools
@@ -65,7 +88,6 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 ### xarray-grib-driver
 
 ```python
->>> import xarray as xr
 >>> import xarray_grib
 >>> store = xarray_grib.GribDataStore('forecast.grib')
 >>> forecast = xr.open_dataset(store)
