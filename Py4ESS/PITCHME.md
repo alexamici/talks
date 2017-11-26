@@ -76,8 +76,10 @@ Alessandro Amici, B-Open, Rome
 ---
 
 ### Thank you!
-#### Do we have time for questions?
+#### Do we have time for Q/A?
 
 Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
+
+Slides on: https://gitpitch.com/alexamici/talks/master?p=Py4ESS
