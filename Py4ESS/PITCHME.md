@@ -43,9 +43,10 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ### xarray data model
 
+<span style='font-size: 75%;'>
 ```python
 >>> import xarray as xr
->>> xr.open_dataset('ERA5-tuv.nc')
+>>> xr.open_dataset('ERA5-tuv-europe.nc')
 <xarray.Dataset>
 Dimensions:    (latitude: 42, level: 5, longitude: 73, time: 4)
 Coordinates:
@@ -61,6 +62,7 @@ Attributes:
     Conventions:  CF-1.6
     history:      2017-11-26 11:12:39 GMT by grib_to_netcdf-2.5.0: grib_to_ne...
 ```
+</span>
 
 ---
 
