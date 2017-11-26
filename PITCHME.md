@@ -9,7 +9,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Motivation: forecast data and tools
 
- * ECMWF:
+ * ECMWF
    * Weather forecasts, re-analyses, satellite and in-situ observations
    * N-dimensional gridded data in GRIB
    * Archive: Meteorological Archival and Retrieval System (MARS)
@@ -19,7 +19,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Motivation: climate data
 
- * Copernicus Climate Change Service (C3S), by ECMWF:
+ * Copernicus Climate Change Service (C3S)
    * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
    * N-dimensional gridded data in many dialects of NetCDF and GRIB
    * Archive: Climate Data Store (CDS)
@@ -28,7 +28,7 @@ Alessandro Amici, B-Open, Rome
 
 ### Harmonisation strategic choices
 
- * Python programming language
+ * Python 3 programming language
  * `xarray.DataArray` data structure
    * coordinates harmonisation
      * matching labels, units and values
@@ -36,7 +36,7 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### ECMWF harmonisation strategy
+### ECMWF harmonisation projects
 
  * pythonisation of ECMWF data and tools
    * xarray GRIB driver (depends on ecCodes) @fa[git-square]
@@ -47,9 +47,8 @@ Alessandro Amici, B-Open, Rome
 
 ---
 
-### C3S harmonisation strategy
+### C3S harmonisation projects
 
- * Climate Data Store
  * CDS common data model @fa[git-square]
    * importer and compliance checker
  * CF Conventions aware variables operations @fa[git-square]
