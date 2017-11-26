@@ -41,33 +41,14 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ---
 
-### xarray data model
+### xarray.DataArray data model
+
+ECMWF NetCDF dilect
 
 ```python
 >>> import xarray as xr
->>> xr.open_dataset('ERA5-tuv-europe.nc')
-<xarray.Dataset>
-Dimensions:    (latitude: 42, level: 5, longitude: 73, time: 4)
-Coordinates:
-  * longitude  (longitude) float32 -27.0 -26.0 -25.0 -24.0 -23.0 -22.0 -21.0 ...
-  * latitude   (latitude) float32 74.0 73.0 72.0 71.0 70.0 69.0 68.0 67.0 ...
-  * level      (level) int32 300 500 700 850 1000
-  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
-Data variables:
-    t          (time, level, latitude, longitude) float64 220.6 220.8 221.0 ...
-    u          (time, level, latitude, longitude) float64 -11.93 -12.68 ...
-    v          (time, level, latitude, longitude) float64 5.13 6.681 8.024 ...
-Attributes:
-    Conventions:  CF-1.6
-    history:      2017-11-26 11:12:39 GMT by grib_to_netcdf-2.5.0: grib_to_ne...
-```
-
----
-
-### xarray.DataArray
-
-```python
->>> xr.open_dataset('ERA5-tuv-europe.nc', chunks={})
+>>> ta_era5 = xr.open_dataset('ERA5-tuv-europe.nc', chunks={}).t
+>>> ta_era5
 <xarray.DataArray 't' (time: 4, level: 5, latitude: 42, longitude: 73)>
 dask.array<open_dataset-..., shape=(4, 5, 42, 73), dtype=float64, chunksize=(4, 5, 42, 73)>
 Coordinates:
@@ -79,6 +60,31 @@ Attributes:
     units:          K
     long_name:      Temperature
     standard_name:  air_temperature
+```
+---
+
+### xarray.DataArray data model
+
+CMIP5 NetCDF dilect
+
+```python
+>>> ta_CMIP5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc', chunks={}).ta
+>>> ta_CMIP5
+<xarray.DataArray 'ta' (time: 120, plev: 3, lat: 240, lon: 480)>
+dask.array<open_dataset-..., shape=(120, 3, 240, 480), dtype=float64, chunksize=(120, 3, 240, 480)>
+Coordinates:
+  * time     (time) datetime64[ns] 2017-06-01 2017-06-01T06:00:00 ...
+  * plev     (plev) float64 8.5e+04 5e+04 2.5e+04
+  * lat      (lat) float64 -89.43 -88.68 -87.94 -87.19 -86.44 -85.69 -84.95 ...
+  * lon      (lon) float64 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 6.75 7.5 ...
+Attributes:
+    standard_name:     air_temperature
+    long_name:         Air Temperature
+    units:             K
+    original_name:     t
+    cell_measures:     area: areacella
+    associated_files:  baseURL: http://cmip-pcmdi.llnl.gov/CMIP5/dataLocation...
+    history:           2012-04-13T21:01:28Z altered by CMOR: Inverted axis: lat.
 ```
 
 ---
