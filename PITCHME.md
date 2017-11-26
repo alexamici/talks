@@ -63,9 +63,9 @@ Alessandro Amici, B-Open, Rome
 
 ### Credits and teams
 
- * Coordinators: S. Siemen, B. Rault, C. Bergeron (ECMWF) and A. Amici
+ * Coordinators: S. Siemen, B. Rault (ECMEF / C3S), C. Bergeron (C3S) and A. Amici
  * Developers and scientific advisers:
-   * metview-python: I. Russell (ECMWF) and M. Di Bari
+   * metview: I. Russell (ECMWF) and M. Di Bari
    * xarray-grib-driver: A. Amici and L. Barcaroli
    * cds-cmor-tables: F. Fierli, C. Cagnazzo (ISAC-CNR) and G. Cammarota
    * cdstools: G. Cammarota and F. Nazzaro
