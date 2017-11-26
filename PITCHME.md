@@ -67,7 +67,7 @@ Alessandro Amici, B-Open, Rome
  * Developers and scientific advisers:
    * metview: I. Russell (ECMWF) and M. Di Bari
    * xarray-grib-driver: A. Amici and L. Barcaroli
-   * cds-cmor-tables: F. Fierli, C. Cagnazzo (ISAC-CNR) and G. Cammarota
+   * cds-cmor-tables: C. Cagnazzo, F. Fierli (ISAC-CNR) and G. Cammarota
    * cdstools: G. Cammarota and F. Nazzaro
 
 ---
