@@ -82,4 +82,4 @@ Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
-Slides on: https://gitpitch.com/alexamici/talks/master?p=Py4ESS
+<span style='font-size: 50%;'>Slides: https://gitpitch.com/alexamici/talks/master?p=Py4ESS</span>
