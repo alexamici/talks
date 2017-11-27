@@ -207,7 +207,6 @@ Attributes:
    * CMOR definition files
    * compliance checker tool
    * simple configurable import tool
-   * not public yet, to be release as Open Source
 
 +++
 
@@ -284,7 +283,6 @@ Close, but no cigar! `lat` grids differ :(
    * internal provenance tracking
    * update of some attributes: e.g. `long_name`, `units`...
    * metadata aware plots: title, legend, labels, units...
-   * not public yet, to be release as Open Source
 
 +++
 
