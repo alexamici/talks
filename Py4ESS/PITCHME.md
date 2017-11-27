@@ -277,7 +277,7 @@ Attributes:
 
 ---
 
-### cdstools: climate specific oprations
+### cdstools: climate tools
 
  * CDS Tools
    * units conversion during operations
