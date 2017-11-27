@@ -157,6 +157,10 @@ Coordinates:
 
 ### cds-cmor-tables: import ECMWF
 
+```shell
+$ make_compliant ERA5-t-2016-06 -o ERA5-t-2016-06_ta_cdm.nc
+```
+
 ```python
 >>> ta_era5_cdm = xr.open_dataarray('ERA5-t-2016-06_ta_cdm.nc')
 >>> ta_era5_cdm
@@ -176,6 +180,11 @@ Attributes:
 +++
 
 ### cds-cmor-tables: import CMIP5
+
+```shell
+$ make_compliant ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc \
+    -o ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc
+```
 
 ```python
 >>> ta_cmip5_cdm = xr.open_dataarray('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc')
