@@ -241,7 +241,7 @@ Close, but no cigar! `lat` grids differ :(
    * not public yet, to be release as Open Source
    * pull request to xarray! (at some point)
 
----
++++
 
 ### xarray-grib-driver: GRIB in xarray
 
@@ -276,11 +276,10 @@ Attributes:
 >>> ta_era5_map = util.average(ta_era5_low, dim='time')
 >>> ta_era5_map
 <xarray.DataArray 'ta' (lat: 241, lon: 480)>
-array([[ 238.349686,  238.349686,  238.349686, ...]], dtype=float32)
+array([[ 236.114685,  236.114685,  236.114685, ..., ]], dtype=float32)
 Coordinates:
   * lat      (lat) float64 -90.0 -89.25 -88.5 -87.75 -87.0 -86.25 -85.5 ...
     plev     float64 8.5e+04
-    time     datetime64[ns] 2017-06-01
   * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
 Attributes:
     long_name:      temperature - time average
