@@ -321,9 +321,9 @@ Attributes:
 
 ### Teams and Credits
 
- * Coordinators: B. Rault (ECMEF / C3S), S. Siemen (ECMWF), C. Bergeron (C3S) and A. Amici
+ * Coordinators: B. Rault (ECMWF / C3S), S. Siemen (ECMWF), C. Bergeron (C3S) and A. Amici
  * Developers and scientific advisers:
-   * metview: I. Russell (ECMWF) and M. Di Bari
+   * Metview: I. Russell (ECMWF) and M. Di Bari
    * xarray-grib-driver: A. Amici and L. Barcaroli
    * cds-cmor-tables: C. Cagnazzo, F. Fierli (ISAC-CNR) and G. Cammarota
    * cdstools: G. Cammarota and F. Nazzaro
