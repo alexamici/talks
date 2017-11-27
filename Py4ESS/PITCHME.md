@@ -232,7 +232,7 @@ Close, but no cigar! `lat` grids differ :(
 
 ---
 
-### xarray-grib-driver
+### xarray-grib-driver: 
 
 ```python
 >>> import xarray_grib
@@ -241,6 +241,14 @@ Close, but no cigar! `lat` grids differ :(
 >>> ta_grib
 DataArray()
 ```
+
+---
+
+### cdstools: metadata aware operations
+
++++
+
+### cdstools: metadata aware plotting
 
 ---
 
