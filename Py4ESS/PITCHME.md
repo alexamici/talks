@@ -273,7 +273,7 @@ Attributes:
 >>> fig, ax = plt.subplots(subplot_kw={'projection': plt.cartopy.crs.Robinson()}, figsize=(12, 6))
 >>> plt.geomap(ta_era5_map, ax=ax)
 ```
-![geomap](assets/ta_era5_map.jpg)
+![geomap](assets/ta_era5_map.png)
 
 ---
 
