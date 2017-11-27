@@ -39,7 +39,7 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
    * NetCDF data model: variables and coordinates
    * support for arbitrary metadata
    * CF Conventions support on IO
-   * label-matching broadcast rules on coodrdinates
+   * label-matching broadcast rules on coordinates
 
 ---
 
@@ -47,13 +47,13 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ```python
 >>> import xarray as xr
->>> ta_era5 = xr.open_dataset('ERA5-t-europe.nc', chunks={}).t
+>>> ta_era5 = xr.open_dataset('ERA5-t-2016-06.nc', chunks={}).t
 >>> ta_era5
-<xarray.DataArray 't' (time: 60, level: 3, latitude: 42, longitude: 73)>
-dask.array<open_..., shape=(60, 3, 42, 73), dtype=float64, chunksize=(60, 3, 42, 73)>
+<xarray.DataArray 't' (time: 60, level: 3, latitude: 241, longitude: 480)>
+dask.array<open_dataset-..., shape=(60, 3, 241, 480), dtype=float64, chunksize=(60, 3, 241, 480)>
 Coordinates:
-  * longitude  (longitude) float32 -27.0 -26.0 -25.0 -24.0 -23.0 -22.0 -21.0 ...
-  * latitude   (latitude) float32 74.0 73.0 72.0 71.0 70.0 69.0 68.0 67.0 ...
+  * longitude  (longitude) float32 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 ...
+  * latitude   (latitude) float32 90.0 89.25 88.5 87.75 87.0 86.25 85.5 ...
   * level      (level) int32 250 500 850
   * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
 Attributes:
@@ -68,8 +68,8 @@ Attributes:
 ### CMIP5 NetCDF dialect
 
 ```python
->>> ta_CMIP5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc', chunks={}).ta
->>> ta_CMIP5
+>>> ta_cmip5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc', chunks={}).ta
+>>> ta_cmip5
 <xarray.DataArray 'ta' (time: 120, plev: 3, lat: 240, lon: 480)>
 dask.array<open_dataset-..., shape=(120, 3, 240, 480), dtype=float64, chunksize=(120, 3, 240, 480)>
 Coordinates:
@@ -95,12 +95,12 @@ Attributes:
 
 ```python
 >>> ta_era5 - ta_cmip5
-<xarray.DataArray (time: 60, level: 3, latitude: 42, longitude: 73, plev: 3, lat: 240, lon: 480)>
-dask.array<sub, shape=(60, 3, 42, 73, 3, 240, 480), dtype=float64, chunksize=(60, 3, 42, 73, 3, 240, 480)>
+<xarray.DataArray (time: 60, level: 3, latitude: 241, longitude: 480, plev: 3, lat: 240, lon: 480)>
+dask.array<sub, shape=(60, 3, 241, 480, 3, 240, 480), dtype=float64, chunksize=(60, 3, 241, 480, 3, 240, 480)>
 Coordinates:
   * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
-  * longitude  (longitude) float32 -27.0 -26.0 -25.0 -24.0 -23.0 -22.0 -21.0 ...
-  * latitude   (latitude) float32 74.0 73.0 72.0 71.0 70.0 69.0 68.0 67.0 ...
+  * longitude  (longitude) float32 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 ...
+  * latitude   (latitude) float32 90.0 89.25 88.5 87.75 87.0 86.25 85.5 ...
   * level      (level) int32 250 500 850
   * plev       (plev) float64 8.5e+04 5e+04 2.5e+04
   * lat        (lat) float64 -89.43 -88.68 -87.94 -87.19 -86.44 -85.69 ...
@@ -113,13 +113,13 @@ Coordinates:
 
 ```python
 >>> ta_era5.rename({'latitude': 'lat', 'longitude': 'lon', 'level': 'plev'}) - ta_cmip5
-<xarray.DataArray (time: 60, plev: 0, lat: 0, lon: 16)>
-dask.array<sub, shape=(60, 0, 0, 16), dtype=float64, chunksize=(60, 0, 0, 16)>
+<xarray.DataArray (time: 60, plev: 0, lat: 0, lon: 480)>
+dask.array<sub, shape=(60, 0, 0, 480), dtype=float64, chunksize=(60, 0, 0, 480)>
 Coordinates:
   * time     (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 2017-06-02 ...
   * plev     (plev) object 
   * lat      (lat) float64 
-  * lon      (lon) float64 0.0 3.0 6.0 9.0 12.0 15.0 18.0 21.0 24.0 27.0 ...
+  * lon      (lon) float32 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 6.75 7.5 ...
 ```
 
 ---
@@ -164,6 +164,63 @@ Coordinates:
 >>> ta_grib
 DataArray()
 ```
+
+---
+
+### cds-cmor-tables: import ECMWF
+
+```python
+>>> ta_era5_cdm = xr.open_dataarray('ERA5-t-2016-06_ta_cdm.nc')
+>>> ta_era5_cdm
+<xarray.DataArray 'ta' (time: 60, plev: 3, lat: 241, lon: 480)>
+[20822400 values with dtype=float32]
+Coordinates:
+  * lat      (lat) float64 -90.0 -89.25 -88.5 -87.75 -87.0 -86.25 -85.5 ...
+  * plev     (plev) float64 8.5e+04 5e+04 2.5e+04
+  * time     (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 2017-06-02 ...
+  * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
+Attributes:
+    long_name:      temperature
+    standard_name:  air_temperature
+    units:          K
+```
+
+---
+
+### cds-cmor-tables: import CMIP5
+
+```python
+>>> ta_cmip5_cdm = xr.open_dataarray('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc')
+>>> ta_cmip5_cdm
+<xarray.DataArray 'ta' (time: 120, plev: 3, lat: 240, lon: 480)>
+[41472000 values with dtype=float32]
+Coordinates:
+  * time     (time) datetime64[ns] 2017-06-01 2017-06-01T06:00:00 ...
+  * plev     (plev) float64 8.5e+04 5e+04 2.5e+04
+  * lat      (lat) float64 -89.43 -88.68 -87.94 -87.19 -86.44 -85.69 -84.95 ...
+  * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
+Attributes:
+    long_name:      temperature
+    standard_name:  air_temperature
+    units:          K
+```
+
+---
+
+### cds-cmor-tables: we can almost able to do anomaly!
+
+```python
+>>> ta_era5_cdm - ta_cmip5_cdm
+<xarray.DataArray 'ta' (time: 60, plev: 3, lat: 0, lon: 480)>
+array([], shape=(60, 3, 0, 480), dtype=float32)
+Coordinates:
+  * time     (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 2017-06-02 ...
+  * lat      (lat) float64 
+  * plev     (plev) float64 8.5e+04 5e+04 2.5e+04
+  * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
+```
+
+`lat` grid do not feet :(
 
 ---
 
