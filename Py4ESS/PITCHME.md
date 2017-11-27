@@ -232,7 +232,18 @@ Close, but no cigar! `lat` grids differ :(
 
 ---
 
-### xarray-grib-driver: 
+### xarray-grib-driver: GRIB in xarray
+
+ * GRIB driver
+   * uses ecCodes via CFFI ABI level
+   * low-level GRIB driver similar to netcdf4-python
+   * high-level xarray driver
+   * not public yet, to be release as Open Source
+   * pull request to xarray
+
+---
+
+### xarray-grib-driver: GRIB in xarray
 
 ```python
 >>> import xarray_grib
