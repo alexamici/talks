@@ -157,12 +157,12 @@ Coordinates:
 
 ### cds-cmor-tables: CDS CDM definition
 
-CDS Common Data Model:
- * based on CMIP6 and CDS seasonal forecast models
- * CMOR definition files
- * compliance cecker tool
- * simple configurable import tool
- * not public yet, to be release as Open Source
+ * CDS Common Data Model:
+   * based on CMIP6 and CDS seasonal forecast models
+   * CMOR definition files
+   * compliance cecker tool
+   * simple configurable import tool
+   * not public yet, to be release as Open Source
 
 +++
 
