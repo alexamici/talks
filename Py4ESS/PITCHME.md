@@ -68,7 +68,7 @@ Attributes:
 ### CMIP5 NetCDF dialect
 
 ```python
->>> ta_cmip5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc', chunks={}).ta
+>>> ta_cmip5 = xr.open_dataset('ta_6hrPlev_CMCC-CM_decadal2005_2017-06.nc', chunks={}).ta
 >>> ta_cmip5
 <xarray.DataArray 'ta' (time: 120, plev: 3, lat: 240, lon: 480)>
 dask.array<open_dataset-..., shape=(120, 3, 240, 480), dtype=float64, chunksize=(120, 3, 240, 480)>
@@ -204,7 +204,7 @@ Attributes:
 
  * CDS Common Data Model:
    * based on CMIP6 and CDS seasonal forecasts
-   * CMOR definition files
+   * Climate Model Output Rewriter (CMOR) definition files
    * compliance checker tool
    * simple configurable import tool
 
@@ -213,7 +213,7 @@ Attributes:
 ### cds-cmor-tables: import ECMWF
 
 ```shell
-$ make_cdscdm ERA5-t-2016-06 -o ERA5-t-2016-06_ta_cdm.nc
+$ make_cdscdm ERA5-t-2016-06.nc -o ERA5-t-2016-06_ta_cdm.nc
 ```
 
 ```python
@@ -237,12 +237,12 @@ Attributes:
 ### cds-cmor-tables: import CMIP5
 
 ```shell
-$ make_cdscdm ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc \
-    -o ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc
+$ make_cdscdm ta_6hrPlev_CMCC-CM_decadal2005_2017-06.nc \
+    -o ta_6hrPlev_CMCC-CM_decadal2005_2017-06_ta_cdm.nc
 ```
 
 ```python
->>> ta_cmip5_cdm = xr.open_dataarray('ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc')
+>>> ta_cmip5_cdm = xr.open_dataarray('ta_6hrPlev_CMCC-CM_decadal2005_2017-06_ta_cdm.nc')
 >>> ta_cmip5_cdm
 <xarray.DataArray 'ta' (time: 120, plev: 3, lat: 240, lon: 480)>
 [41472000 values with dtype=float32]
