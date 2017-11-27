@@ -160,7 +160,7 @@ Coordinates:
  * CDS Common Data Model:
    * based on CMIP6 and CDS seasonal forecasts
    * CMOR definition files
-   * compliance cecker tool
+   * compliance checker tool
    * simple configurable import tool
    * not public yet, to be release as Open Source
 
@@ -236,10 +236,23 @@ Close, but no cigar! `lat` grids differ :(
 
 ```python
 >>> import xarray_grib
->>> store = xarray_grib.GribDataStore('forecast.grib')
->>> ta_grib = xr.open_dataset(store)
->>> ta_grib
-DataArray()
+>>> store = xarray_grib.GribDataStore('ERA5-t-2016-06.grib')
+>>> ta_era5_grib = xr.open_dataarray(store)
+>>> ta_era5_grib
+<xarray.DataArray 't' (time: 60, number: 1, step: 1, level: 3, latitude: 241, longitude: 480)>
+[20822400 values with dtype=float32]
+Coordinates:
+  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
+  * number     (number) int32 0
+  * step       (step) int32 0
+  * level      (level) float64 850.0 500.0 250.0
+  * latitude   (latitude) float64 90.0 89.25 88.5 87.75 87.0 86.25 85.5 ...
+  * longitude  (longitude) float64 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 ...
+Attributes:
+    long_name:  Temperature
+    units:      K
+>>> ta_era5_grib.level.attrs['units']
+'hPa'
 ```
 
 ---
