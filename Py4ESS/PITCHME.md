@@ -232,12 +232,12 @@ Close, but no cigar! `lat` grids differ :(
 
 ---
 
-### xarray-grib-driver: GRIB in xarray
+### xarray-grib-driver: GRIB as first class citizen
 
- * GRIB driver
+ * xarray GRIB driver
    * uses ecCodes via CFFI ABI level
    * low-level GRIB driver similar to netcdf4-python
-   * high-level xarray driver
+   * high-level actual xarray driver
    * not public yet, to be release as Open Source
    * pull request to xarray! (at some point)
 
