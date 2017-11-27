@@ -268,10 +268,21 @@ Attributes:
 
 ---
 
+### cdstools: climate specific oprations
+
+ * CDS Tools
+   * units conversion during operations
+   * internal provenance tracking
+   * update of some attributes: e.g. `long_name`, `units`...
+   * metadata aware plots: title, legend, labels, units...
+   * not public yet, to be release as Open Source
+
++++
+
 ### cdstools: metadata aware operations
 
 ```python
->>> from cftools import util
+>>> from cdstools import util
 >>> ta_era5_low = util.select(ta_era5_cdm, plev=85000)
 >>> ta_era5_map = util.average(ta_era5_low, dim='time')
 >>> ta_era5_map
@@ -292,7 +303,7 @@ Attributes:
 ### cdstools: metadata aware plotting
 
 ```python
->>> from cftools import matplotlib as plt
+>>> from cdstools import matplotlib as plt
 >>> projection = plt.cartopy.crs.Robinson()
 >>> fig, ax = plt.subplots(subplot_kw={'projection': projection}, figsize=(12, 6))
 >>> plt.geomap(ta_era5_map, ax=ax)
@@ -300,7 +311,6 @@ Attributes:
 ![geomap](assets/ta_era5_map.png)
 
 ---
-
 
 ### Teams and Credits
 
