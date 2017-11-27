@@ -248,7 +248,8 @@ DataArray()
 
 ```python
 >>> from cftools import util
->>> ta_era5_map = util.select(ta_era5_cdm, time='2017-06-01T00:00:00', plev=85000)
+>>> ta_era5_low = util.select(ta_era5_cdm, plev=85000)
+>>> ta_era5_map = util.average(ta_era5_low, dim='time')
 >>> ta_era5_map
 <xarray.DataArray 'ta' (lat: 241, lon: 480)>
 array([[ 238.349686,  238.349686,  238.349686, ...]], dtype=float32)
@@ -258,7 +259,7 @@ Coordinates:
     time     datetime64[ns] 2017-06-01
   * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
 Attributes:
-    long_name:      temperature
+    long_name:      temperature - time average
     standard_name:  air_temperature
     units:          K
 ```
