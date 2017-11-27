@@ -155,6 +155,51 @@ Coordinates:
 
 ---
 
+### xarray-grib-driver: GRIB as first class citizen
+
+ * xarray GRIB driver
+   * uses ecCodes via CFFI ABI level
+   * low-level GRIB driver similar to netcdf4-python
+   * high-level actual xarray driver
+   * not public yet, to be release as Open Source
+   * pull request to xarray! (at some point)
+
++++
+
+### xarray-grib-driver: GRIB in xarray
+
+```python
+>>> import xarray_grib
+>>> store = xarray_grib.GribDataStore('ERA5-t-2016-06.grib')
+>>> ta_era5_grib = xr.open_dataarray(store)
+>>> ta_era5_grib
+<xarray.DataArray 't' (time: 60, number: 1, step: 1, level: 3, latitude: 241, longitude: 480)>
+[20822400 values with dtype=float32]
+Coordinates:
+  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
+  * number     (number) int32 0
+  * step       (step) int32 0
+  * level      (level) float64 850.0 500.0 250.0
+  * latitude   (latitude) float64 90.0 89.25 88.5 87.75 87.0 86.25 85.5 ...
+  * longitude  (longitude) float64 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 ...
+Attributes:
+    long_name:  Temperature
+    units:      K
+>>> ta_era5_grib.level.attrs['units']
+'hPa'
+```
+
++++
+
+### xarray-grib-driver: GRIB in xarray
+
+```python
+>>> ta_era5_grib.sel(time='2017-06-01T00:00:00', level=850).plot()
+```
+![ta_era5_grib](assets/ta_era5_grib.png)
+
+---
+
 ### cds-cmor-tables: CDS CDM definition
 
  * CDS Common Data Model:
@@ -229,51 +274,6 @@ Coordinates:
 ```
 
 Close, but no cigar! `lat` grids differ :(
-
----
-
-### xarray-grib-driver: GRIB as first class citizen
-
- * xarray GRIB driver
-   * uses ecCodes via CFFI ABI level
-   * low-level GRIB driver similar to netcdf4-python
-   * high-level actual xarray driver
-   * not public yet, to be release as Open Source
-   * pull request to xarray! (at some point)
-
-+++
-
-### xarray-grib-driver: GRIB in xarray
-
-```python
->>> import xarray_grib
->>> store = xarray_grib.GribDataStore('ERA5-t-2016-06.grib')
->>> ta_era5_grib = xr.open_dataarray(store)
->>> ta_era5_grib
-<xarray.DataArray 't' (time: 60, number: 1, step: 1, level: 3, latitude: 241, longitude: 480)>
-[20822400 values with dtype=float32]
-Coordinates:
-  * time       (time) datetime64[ns] 2017-06-01 2017-06-01T12:00:00 ...
-  * number     (number) int32 0
-  * step       (step) int32 0
-  * level      (level) float64 850.0 500.0 250.0
-  * latitude   (latitude) float64 90.0 89.25 88.5 87.75 87.0 86.25 85.5 ...
-  * longitude  (longitude) float64 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 ...
-Attributes:
-    long_name:  Temperature
-    units:      K
->>> ta_era5_grib.level.attrs['units']
-'hPa'
-```
-
-+++
-
-### xarray-grib-driver: GRIB in xarray
-
-```python
->>> ta_era5_grib.sel(time='2017-06-01T00:00:00', level=850).plot()
-```
-![ta_era5_grib](assets/ta_era5_grib.png)
 
 ---
 
