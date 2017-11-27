@@ -162,7 +162,7 @@ CDS Common Data Model:
  * CMOR definition files
  * compliance cecker tool
  * simple configurable import tool
- * not public yet, but planned to be release as Open Source
+ * not public yet, to be release as Open Source
 
 +++
 
