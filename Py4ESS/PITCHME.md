@@ -41,7 +41,7 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
    * CF Conventions support on IO
    * label-matching broadcast rules on coordinates
 
----
++++
 
 ### ECMWF NetCDF dialect
 
@@ -89,7 +89,7 @@ Attributes:
 'Pa'
 ```
 
----
++++
 
 ### Interoperability is hard
 
