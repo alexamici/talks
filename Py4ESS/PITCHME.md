@@ -63,7 +63,7 @@ Attributes:
 >>> ta_era5.level.attrs['units']
 'millibars'
 ```
----
++++
 
 ### CMIP5 NetCDF dialect
 
@@ -107,7 +107,7 @@ Coordinates:
   * lon        (lon) float64 0.0 0.75 1.5 2.25 3.0 3.75 4.5 5.25 6.0 6.75 ...
 ```
 
----
++++
 
 ### Interoperability is hard
 
@@ -132,7 +132,7 @@ Coordinates:
      * matching labels, units and centre values (e.g same grid)
    * more advanced use of metadata / CF Conventions
 
----
++++
 
 ### ECMWF harmonisation projects
 
@@ -143,7 +143,7 @@ Coordinates:
    * low level python bindings
      * ecCodes @fa[check-square], odb-api @fa[check-square]
 
----
++++
 
 ### C3S harmonisation projects
 
@@ -173,7 +173,7 @@ Attributes:
     units:          K
 ```
 
----
++++
 
 ### cds-cmor-tables: import CMIP5
 
@@ -193,7 +193,7 @@ Attributes:
     units:          K
 ```
 
----
++++
 
 ### cds-cmor-tables: simple anomaly
 
@@ -208,7 +208,7 @@ Coordinates:
   * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
 ```
 
-Close but no cigar! `lat` grids do not fit :(
+Close, but no cigar! `lat` grids differ :(
 
 ---
 
