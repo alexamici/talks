@@ -20,7 +20,7 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
    * Archive: Meteorological Archival and Retrieval System (MARS)
    * A lot of tools: Metview, Magics, ecCodes...
 
----
++++
 
 ### Motivation: climate data
 
