@@ -270,7 +270,8 @@ Attributes:
 
 ```python
 >>> from cftools import matplotlib as plt
->>> fig, ax = plt.subplots(subplot_kw={'projection': plt.cartopy.crs.Robinson()}, figsize=(12, 6))
+>>> projection = plt.cartopy.crs.Robinson()
+>>> fig, ax = plt.subplots(subplot_kw={'projection': projection}, figsize=(12, 6))
 >>> plt.geomap(ta_era5_map, ax=ax)
 ```
 ![geomap](assets/ta_era5_map.png)
