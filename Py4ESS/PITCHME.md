@@ -239,7 +239,7 @@ Close, but no cigar! `lat` grids differ :(
    * low-level GRIB driver similar to netcdf4-python
    * high-level xarray driver
    * not public yet, to be release as Open Source
-   * pull request to xarray
+   * pull request to xarray! (at some point)
 
 ---
 
