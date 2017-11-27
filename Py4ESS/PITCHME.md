@@ -266,6 +266,15 @@ Attributes:
 'hPa'
 ```
 
++++
+
+###
+
+```python
+>>> ta_era5_grib.sel(time='2017-06-01T00:00:00', level=850).plot()
+```
+![ta_era5_grib](assets/ta_era5_grib.png)
+
 ---
 
 ### cdstools: climate specific oprations
@@ -308,7 +317,7 @@ Attributes:
 >>> fig, ax = plt.subplots(subplot_kw={'projection': projection}, figsize=(12, 6))
 >>> plt.geomap(ta_era5_map, ax=ax)
 ```
-![geomap](assets/ta_era5_map.png)
+![ta_era5_map](assets/ta_era5_map.png)
 
 ---
 
