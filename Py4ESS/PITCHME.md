@@ -155,10 +155,21 @@ Coordinates:
 
 ---
 
+### cds-cmor-tables: CDS CDM definition
+
+CDS Common Data Model:
+ * starting from CMIP6 and CDS seasonal forecast data models
+ * CMOR definition files
+ * compliance cecker tool
+ * simple configurable import tool
+ * not public yet, but planned to be release as Open Source
+
++++
+
 ### cds-cmor-tables: import ECMWF
 
 ```shell
-$ make_compliant ERA5-t-2016-06 -o ERA5-t-2016-06_ta_cdm.nc
+$ make_cdscdm ERA5-t-2016-06 -o ERA5-t-2016-06_ta_cdm.nc
 ```
 
 ```python
@@ -182,7 +193,7 @@ Attributes:
 ### cds-cmor-tables: import CMIP5
 
 ```shell
-$ make_compliant ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc \
+$ make_cdscdm ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018.nc \
     -o ta_6hrPlev_CMCC-CM_decadal2005_r1i3p1_2017060100-2017063018_ta_cdm.nc
 ```
 
