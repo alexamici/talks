@@ -246,9 +246,33 @@ DataArray()
 
 ### cdstools: metadata aware operations
 
+```python
+>>> from cftools import util
+>>> ta_era5_map = util.select(ta_era5_cdm, time='2017-06-01T00:00:00', plev=85000)
+>>> ta_era5_map
+<xarray.DataArray 'ta' (lat: 241, lon: 480)>
+array([[ 238.349686,  238.349686,  238.349686, ...]], dtype=float32)
+Coordinates:
+  * lat      (lat) float64 -90.0 -89.25 -88.5 -87.75 -87.0 -86.25 -85.5 ...
+    plev     float64 8.5e+04
+    time     datetime64[ns] 2017-06-01
+  * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
+Attributes:
+    long_name:      temperature
+    standard_name:  air_temperature
+    units:          K
+```
+
 +++
 
 ### cdstools: metadata aware plotting
+
+```python
+>>> from cftools import matplotlib as plt
+>>> fig, ax = plt.subplots(subplot_kw={'projection': plt.cartopy.crs.Robinson()}, figsize=(12, 6))
+>>> plt.geomap(ta_era5_map, ax=ax)
+```
+![geomap](assets/ta_era5_map.jpg)
 
 ---
 
