@@ -155,18 +155,6 @@ Coordinates:
 
 ---
 
-### xarray-grib-driver
-
-```python
->>> import xarray_grib
->>> store = xarray_grib.GribDataStore('forecast.grib')
->>> ta_grib = xr.open_dataset(store)
->>> ta_grib
-DataArray()
-```
-
----
-
 ### cds-cmor-tables: import ECMWF
 
 ```python
@@ -207,7 +195,7 @@ Attributes:
 
 ---
 
-### cds-cmor-tables: we can almost able to do anomaly!
+### cds-cmor-tables: simple anomaly
 
 ```python
 >>> ta_era5_cdm - ta_cmip5_cdm
@@ -220,9 +208,22 @@ Coordinates:
   * lon      (lon) float64 -180.0 -179.2 -178.5 -177.8 -177.0 -176.2 -175.5 ...
 ```
 
-`lat` grid do not feet :(
+Close but no cigar! `lat` grids do not fit :(
 
 ---
+
+### xarray-grib-driver
+
+```python
+>>> import xarray_grib
+>>> store = xarray_grib.GribDataStore('forecast.grib')
+>>> ta_grib = xr.open_dataset(store)
+>>> ta_grib
+DataArray()
+```
+
+---
+
 
 ### Teams and Credits
 
