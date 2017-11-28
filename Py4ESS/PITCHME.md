@@ -33,6 +33,8 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ### Harmonisation strategic choices
 
+Metview Python Framework and CDS Toolbox projects
+
  * Python 3 programming language
    * scientific ecosystems
  * `xarray` data structures
