@@ -205,11 +205,11 @@ Attributes:
  * now:
    * internal alpha release
 
- * end 2017:
+ * begining 2018:
    * public beta release
    
  * mid 2018:
-   * propose integration in xarray main repo
+   * propose integration in `xarray` main repo
 
 ---
 
