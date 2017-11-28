@@ -160,7 +160,7 @@ Coordinates:
 ### xarray-grib-driver: GRIB as first class citizen
 
  * xarray GRIB driver
-   * uses ecCodes via CFFI ABI level
+   * uses ecCodes
    * low-level GRIB driver similar to netcdf4-python
    * high-level actual xarray driver
    * not public yet, to be release as Open Source
