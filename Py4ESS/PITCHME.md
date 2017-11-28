@@ -24,7 +24,7 @@ Workshop on developing Python frameworks for earth system sciences, 2017-11-28, 
 
 ### Motivation: climate data
 
- * Copernicus Climate Change Service (C3S)
+ * Copernicus Climate Change Service (C3S / ECMWF)
    * Re-analyses, seasonal forecasts, climate projections, satellite and in-situ observations
    * N-dimensional gridded data in many dialects of NetCDF and GRIB
    * Archive: Climate Data Store (CDS)
@@ -148,7 +148,7 @@ Coordinates:
 
 +++
 
-### C3S harmonisation projects
+### C3S / ECMWF harmonisation projects
 
  * CDS common data model @fa[git-square]
    * definition, importer and compliance checker
@@ -339,7 +339,7 @@ Attributes:
 
 ### Teams and Credits
 
- * Coordinators: B. Raoult (ECMWF / C3S), S. Siemen (ECMWF), C. Bergeron (C3S) and A. Amici
+ * Coordinators: B. Raoult (ECMWF), S. Siemen (ECMWF), C. Bergeron (C3S / ECMWF) and A. Amici
  * Developers and scientific advisers:
    * Metview: I. Russell (ECMWF) and M. Di Bari
    * xarray-grib-driver: A. Amici and L. Barcaroli
