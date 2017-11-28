@@ -198,6 +198,19 @@ Attributes:
 ```
 ![ta_era5_grib](assets/ta_era5_grib.png)
 
++++
+
+### xarray-grib-data: roadmap
+
+ * now:
+   * internal alpha release
+
+ * end 2017:
+   * public beta release
+   
+ * mid 2018:
+   * propose integration in xarray main repo
+
 ---
 
 ### cds-cmor-tables: CDS CDM definition
@@ -207,6 +220,7 @@ Attributes:
    * Climate Model Output Rewriter (CMOR) definition files
    * compliance checker tool
    * simple configurable import tool
+   * not public yet, decision about open-sourcing the project is underway
 
 +++
 
@@ -283,6 +297,7 @@ Close, but no cigar! `lat` grids differ :(
    * internal provenance tracking
    * update of some attributes: e.g. `long_name`, `units`...
    * metadata aware plots: title, legend, labels, units...
+   * not public yet, decision about open-sourcing the project is underway
 
 +++
 
