@@ -42,7 +42,7 @@ Metview Python Framework and CDS Toolbox projects
    * support for arbitrary metadata
    * CF Conventions support on IO
    * label-matching broadcast rules on coordinates
-   * out-of-core computation with `dask`
+   * parallelized and out-of-core computation with `dask`
 
 +++
 
