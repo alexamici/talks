@@ -16,7 +16,7 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 Make GRIB files first-class citizens in Python numerical stack via xarray
 
-Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventions
+Map a GRIB file to the Unidata's *Common Data Model* version 4 like a NetCDF-4 with CF-Conventions
 
 +++
 
@@ -29,7 +29,7 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
 - GRIB Feature Collections - Cons: JAVA
-- pygrib, pupygrib, ecCodes - Cons: GRIB messages only
+- pygrib, pupygrib, ecCodes - Cons: no CMD
 
 ---
 
