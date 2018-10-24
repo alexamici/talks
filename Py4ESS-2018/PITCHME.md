@@ -16,6 +16,8 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 Make GRIB files first-class citizens in Python numerical stack via xarray
 
+Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventions
+
 +++
 
 ### cfgrib features
