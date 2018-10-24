@@ -22,13 +22,12 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
 
 ### State of the art
 
-- Common Data Model
-  - PyNIO
-    - Pro: xarray backend
-    - Con: no PyPI, Python2-only, read-only
-  - Iris-grib
-    - Pro: xarray conversion, read-write
-    - Con: based on ecCodes Python2-only module
+- PyNIO
+ - Pro: xarray backend
+ - Con: no PyPI, Python2-only, read-only
+- Iris-grib
+ - Pro: xarray conversion, read-write
+ - Con: based on ecCodes Python2-only module
 
 - GRIB messages only
   - pygrib, pupygrib, ecCodes
