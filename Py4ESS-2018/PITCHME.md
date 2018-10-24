@@ -54,6 +54,7 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 like a NetCDF-4 w
 ### cfgrib limitations
 
 - no *conda* package, for now,
+- PyPI binary package does not include ecCodes,
 - incomplete documentation, for now,
 - no *Windows* support, for now,
 - rely on *ecCodes* for the CF attributes of the data variables,
