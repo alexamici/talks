@@ -27,7 +27,9 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
  - Con: no PyPI, Python 2-only, read-only
 - Iris-grib
  - Pro: xarray conversion, read-write, conda
- - Con: based on ecCodes Python 2-only module
+ - Con: Python 2-only, domain specific
+- GRIB Feature Collections
+ - Con: JAVA
 - pygrib, pupygrib, ecCodes
  - Con: GRIB messages only
 
@@ -37,8 +39,8 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
    
 - reads most GRIB 1 and 2 files,
 - supports all modern versions of Python 3.7, 3.6, 3.5 and 2.7, plus PyPy and PyPy3,
-- works on most Linux distributions and MacOS, ecCodes C-library is the only system dependency,
-- `pip install cfgrib` with no install time build (binds with *CFFI* ABI mode),
+- works on most Linux distributions and MacOS, *ecCodes* C-library is the only system dependency,
+- you can `pip install cfgrib` with no install time build (binds with *CFFI* ABI mode),
 - reads the data lazily and efficiently in terms of both memory usage and disk access.
 
 +++
@@ -46,7 +48,7 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
 ### cfgrib work in progress
 
 - **Alpha** support for saving the index of a GRIB file to disk, saves a full-file scan on open,
-- **Pre-Alpha** limited support to write carefully-crafted `xarray.Dataset`'s to a GRIB2 file,
+- **Pre-Alpha** support to write carefully-crafted `xarray.Dataset`'s to a GRIB2 file,
 - the target is mostly correctness, but we started working on performance.
 
 +++
