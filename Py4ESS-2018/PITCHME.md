@@ -37,8 +37,7 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
    
 - reads most GRIB 1 and 2 files,
 - supports all modern versions of Python 3.7, 3.6, 3.5 and 2.7, plus PyPy and PyPy3,
-- works on most Linux distributions and MacOS
-  with the ecCodes C-library as the only system dependency,
+- works on most Linux distributions and MacOS, ecCodes C-library is the only system dependency,
 - `pip install cfgrib` with no install time build (binds with *CFFI* ABI mode),
 - reads the data lazily and efficiently in terms of both memory usage and disk access.
 
