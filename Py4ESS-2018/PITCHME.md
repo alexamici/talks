@@ -23,7 +23,7 @@ Make GRIB files first-class citizens in Python numerical stack via xarray
 - support reading most GRIB 1 and 2 files,
 - support all modern versions of Python 3.7, 3.6, 3.5 and 2.7, plus PyPy and PyPy3,
 - support most Linux distributions and MacOS,
-- only system dependency is the ecCodes C-library (not the Python2-only module),
+- only system dependency is the ecCodes C-library,
 - no install time build (binds with *CFFI* ABI mode),
 - read the data lazily and efficiently in terms of both memory usage and disk access.
 
