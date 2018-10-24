@@ -28,10 +28,8 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 plus CF-Conventio
 - Iris-grib
  - Pro: xarray conversion, read-write, conda
  - Con: Python 2-only, domain specific
-- GRIB Feature Collections
- - Con: JAVA
-- pygrib, pupygrib, ecCodes
- - Con: GRIB messages only
+- GRIB Feature Collections - Con: JAVA
+- pygrib, pupygrib, ecCodes - Con: GRIB messages only
 
 ---
 
