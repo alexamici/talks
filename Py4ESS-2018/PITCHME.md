@@ -14,13 +14,17 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 ### Motivation
 
-Make GRIB files first-class citizens in Python numerical stack via xarray
+Make GRIB a first-class citizens in the Python numerical stack
 
-Map a GRIB file to the Unidata's *Common Data Model* version 4 like a NetCDF-4 with CF-Conventions
+- full GRIB support in *xarray*
+  - map to Unidata's *Common Data Model v4* with CF-Conventions
+- user friendliness
+  - full support of Python 3 and PyPy3
+  - major distribution channels: PyPI and conda
 
 +++
 
-### State of the art
+### Current state of GRIB support in Python
 
 - PyNIO
  - Pros: xarray backend, conda
@@ -54,7 +58,7 @@ Map a GRIB file to the Unidata's *Common Data Model* version 4 like a NetCDF-4 w
 ### cfgrib limitations
 
 - no *conda* package, for now,
-- PyPI binary package does not include ecCodes,
+- *PyPI* binary package does not include ecCodes,
 - incomplete documentation, for now,
 - no *Windows* support, for now,
 - rely on *ecCodes* for the CF attributes of the data variables,
