@@ -24,16 +24,15 @@ Make GRIB a first-class citizens in the Python numerical stack
 
 +++
 
-### Current state of GRIB support in Python
+### Current GRIB support in Python
 
+- pygrib, pupygrib, ecCodes - Cons: no CMD
 - PyNIO
  - Pros: xarray backend, conda
  - Cons: no PyPI, Python 2-only, read-only
 - Iris-grib
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
-- GRIB Feature Collections - Cons: JAVA
-- pygrib, pupygrib, ecCodes - Cons: no CMD
 
 ---
 
