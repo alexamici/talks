@@ -15,7 +15,8 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 ### Motivation
 
 We would love the GRIB format to be a first-class citizens in the Python numerical stack...
-much like netCDF.
+
+with support as good as netCDF!
 
 +++
 
