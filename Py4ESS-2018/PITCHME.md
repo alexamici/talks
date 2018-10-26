@@ -14,7 +14,8 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 ### Motivation
 
-We would love the GRIB format to be a first-class citizens in the Python numerical stack!
+We would love the GRIB format to be a first-class citizens in the Python numerical stack...
+much like netCDF.
 
 +++
 
@@ -22,9 +23,11 @@ We would love the GRIB format to be a first-class citizens in the Python numeric
 
 - full GRIB support in *xarray*
   - map to Unidata's *Common Data Model v4* with CF-Conventions
-- user friendliness
+  - gateway to Iris, Numpy, Zarr, etc.
+
+- user friendly install
   - full support of Python 3 and PyPy3
-  - major distribution channels: PyPI and conda
+  - major distribution channels: PyPI, conda, source
 
 +++
 
@@ -33,7 +36,7 @@ We would love the GRIB format to be a first-class citizens in the Python numeric
 - pygrib, pupygrib, ecCodes - No CMD
 - PyNIO
  - Pros: xarray backend, conda
- - Cons: no PyPI, Python 2-only, read-only
+ - Cons: partial CDM support, Python 2-only, no PyPI, read-only
 - Iris-grib
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
