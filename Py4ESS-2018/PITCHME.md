@@ -16,15 +16,15 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 We would love the GRIB format to be a first-class citizens in the Python numerical stack...
 
-with support as good as netCDF!
+... with as good a support as netCDF!
 
 +++
 
 ### Desiderata
 
 - full GRIB support in *xarray*
-  - map to Unidata's *Common Data Model v4* with CF-Conventions
-  - gateway to Iris, Numpy, Zarr, etc.
+  - robust map to Unidata's *Common Data Model v4* with CF-Conventions
+  - gateway to Iris, Numpy, etc.
 
 - user friendly install
   - full support of Python 3 and PyPy3
@@ -75,8 +75,8 @@ with support as good as netCDF!
 
 ### Teams and Credits
 
- * Coordinators (ECMWF): S. Siemen, I. Russell and B. Raoult
- * Developers (B-Open): A. Amici, A. Barghini and L. Barcaroli
+ * ECMWF: Stephan Siemen, Iain Russell and Baudouin Raoult
+ * B-Open: Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
 
 ---
 
