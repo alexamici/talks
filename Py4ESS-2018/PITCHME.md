@@ -14,7 +14,11 @@ Workshop on developing Python frameworks for earth system sciences, 2018-10-30, 
 
 ### Motivation
 
-Make GRIB a first-class citizens in the Python numerical stack
+We would love the GRIB format to be a first-class citizens in the Python numerical stack!
+
++++
+
+### Desiderata
 
 - full GRIB support in *xarray*
   - map to Unidata's *Common Data Model v4* with CF-Conventions
@@ -24,9 +28,9 @@ Make GRIB a first-class citizens in the Python numerical stack
 
 +++
 
-### Current GRIB support in Python
+### GRIB support in Python
 
-- pygrib, pupygrib, ecCodes - Cons: no CMD
+- pygrib, pupygrib, ecCodes - No CMD
 - PyNIO
  - Pros: xarray backend, conda
  - Cons: no PyPI, Python 2-only, read-only
