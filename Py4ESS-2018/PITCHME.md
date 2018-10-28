@@ -122,7 +122,7 @@ Python numerical stack, with as good a support as netCDF!
 ---
 @transition[none]
 
-@snap[centre]
+@snap[center]
 ### Thank you!
 @snapend
 
