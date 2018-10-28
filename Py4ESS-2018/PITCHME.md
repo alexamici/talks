@@ -110,11 +110,11 @@ With conda:
 ```shell
 $ conda install eccodes
 ```
-On Ubuntu 18.04:
+On Ubuntu:
 ```shell
-$ sudo apt install libeccodes0
+$ sudo apt-get install libeccodes0
 ```
-On MacOS with homebrew
+On MacOS with Homebrew
 ```shell
 $ brew install eccodes
 ```
@@ -123,9 +123,14 @@ $ brew install eccodes
 
 ### Install cfgrib
 
-
 ```shell
 $ pip install cfgrib
+$ ptyhon -m cfgrib selfcheck
+Found: ecCodes v2.7.0.
+Your system is ready.
+```
+
+```shell
 $ pip install xarray>=0.11
 ```
 
