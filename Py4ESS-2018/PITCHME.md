@@ -126,7 +126,7 @@ Python numerical stack, with as good a support as netCDF!
 @css[big](Thank you!)
 
 Alessandro Amici, B-Open, Rome
-
+<br>
 @css[small](@fa[twitter] [@alexamici](https://twitter.com/alexamici) )
 <br>
 @fa[github] [@alexamici](https://github.com/alexamici)
