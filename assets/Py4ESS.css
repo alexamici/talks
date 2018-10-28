@@ -8,6 +8,11 @@
     font-size: 50%;
 }
 
+.reveal .big {
+    font-size: 120%;
+    font-face: bold;
+}
+
 .reveal section img {
   border: 0;
 }
