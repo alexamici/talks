@@ -121,7 +121,7 @@ $ brew install eccodes
 
 +++
 
-### Install cfgrib
+### Install *cfgrib*
 
 Install *cfgrib*
 ```shell
@@ -138,6 +138,34 @@ Your system is ready.
 Install *xarray*
 ```shell
 $ pip install xarray>=0.11
+```
+
++++
+
+### Open a GRIB file
+
+```python
+>>> import cfgrib
+>>> cfgrib.open_dataset('era5-levels-members.grib')
+<xarray.Dataset>
+Dimensions:        (isobaricInhPa: 2, latitude: 61, longitude: 120, number: 10, time: 4)
+Coordinates:
+  * number         (number) int64 0 1 2 3 4 5 6 7 8 9
+  * time           (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    step           timedelta64[ns] ...
+  * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
+  * latitude       (latitude) float64 90.0 87.0 84.0 81.0 ... -84.0 -87.0 -90.0
+  * longitude      (longitude) float64 0.0 3.0 6.0 9.0 ... 351.0 354.0 357.0
+    valid_time     (time) datetime64[ns] ...
+Data variables:
+    z              (number, time, isobaricInhPa, latitude, longitude) float32 ...
+    t              (number, time, isobaricInhPa, latitude, longitude) float32 ...
+Attributes:
+    GRIB_edition:            1
+    GRIB_centre:             ecmf
+    GRIB_centreDescription:  European Centre for Medium-Range Weather Forecasts
+    GRIB_subCentre:          0
+    history:                 GRIB to CDM+CF via cfgrib-0.9.../ecCodes-2...
 ```
 
 ---
