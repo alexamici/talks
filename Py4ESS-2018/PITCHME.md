@@ -64,12 +64,12 @@ Python numerical stack, with as good a support as netCDF!
 
 <div class="left">
 <ul>
-        <li>ecCodes bindings via CFFI</li>
+        <li>ecCodes Python 2 and 3 bindings via CFFI</li>
         <li>GRIB-level API: *FileStream*, *FileIndex* and *Message*</li>
         <li>‎‎CDM-level API: *Dataset* and *Variable*, 
             inspired to NetCDF-Python and h5netcdf</li>
         <li>*xarray* read-only backend</li>
-        <li>*xarray* `to_grib`</li>
+        <li>*xarray* `to_grib` helper</li>
     </ul>
 </div>
 <div class="right">
