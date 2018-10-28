@@ -1,5 +1,5 @@
 
-### cfgrib: easy and efficient GRIB file access in xarray
+## cfgrib: easy and efficient GRIB file access in xarray
 
 Alessandro Amici, B-Open, Rome
 
@@ -11,6 +11,10 @@ Workshop on developing Python frameworks for earth system sciences,
 @snapend
 
 ---
+
+## The motivation
+
++++
 
 ### Here at ECMWF...
 
@@ -25,7 +29,7 @@ Workshop on developing Python frameworks for earth system sciences,
 
 +++
 
-### Motivation
+### The goal
 
 We would love the GRIB format to be a first-class citizens in the
 Python numerical stack, with as good a support as netCDF!
@@ -46,6 +50,10 @@ Python numerical stack, with as good a support as netCDF!
 @ulend
 
 ---
+
+## The journey
+
++++
 
 ### GRIB support in Python
 
@@ -74,6 +82,10 @@ Python numerical stack, with as good a support as netCDF!
 <div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
 </div>
+
++++
+
+###
 
 ---
 
@@ -137,6 +149,6 @@ Alessandro Amici, B-Open, Rome
 
 @css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
 
-@snap[south span-90]
+@snap[south]
 @css[regular](Slides: https://gitpitch.com/alexamici/talks)
 @snapend
