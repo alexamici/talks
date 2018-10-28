@@ -146,7 +146,8 @@ $ pip install xarray>=0.11
 
 ```python
 >>> import cfgrib
->>> cfgrib.open_dataset('era5-levels-members.grib')
+>>> ds = cfgrib.open_dataset('era5-levels-members.grib')
+>>> ds
 <xarray.Dataset>
 Dimensions:        (isobaricInhPa: 2, latitude: 61, longitude: 120, number: 10, time: 4)
 Coordinates:
