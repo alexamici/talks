@@ -93,6 +93,10 @@ Python numerical stack, with as good a support as netCDF!
 
 ---
 
+## To summarise
+
++++
+
 ### cfgrib features in beta
 
 @ul
@@ -134,7 +138,7 @@ Python numerical stack, with as good a support as netCDF!
 
 ---
 
-### Team
+## The team
 
 - ECMWF
   - Stephan Siemen, Iain Russell and Baudouin Raoult
@@ -143,7 +147,7 @@ Python numerical stack, with as good a support as netCDF!
 
 ---
 
-### Thank you!
+## Thank you!
 
 Alessandro Amici, B-Open, Rome
 
