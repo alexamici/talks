@@ -120,13 +120,14 @@ Python numerical stack, with as good a support as netCDF!
   - Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
 
 ---
-@layout[center]
 
-### Thank you!
+
+@snap[ceter]
+@css[big](Thank you!)
 
 Alessandro Amici, B-Open, Rome
 
-[@alexamici](https://twitter.com/alexamici) - http://bopen.eu
+@fa[twitter] [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
 <span class='small'>
 Slides: https://gitpitch.com/alexamici/talks
