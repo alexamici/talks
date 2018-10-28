@@ -3,7 +3,7 @@
 
 Alessandro Amici, B-Open, Rome
 
-@css[small](@fa[twitter] [@alexamici](https://twitter.com/alexamici))
+@css[regular](@fa[twitter] [@alexamici](https://twitter.com/alexamici))
 
 @fa[github] [@alexamici](https://github.com/alexamici)
 

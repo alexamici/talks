@@ -8,6 +8,10 @@
     font-size: 50%;
 }
 
+.reveal .regular {
+    font-size: 80%;
+}
+
 .reveal .big {
     font-size: 150%;
     font-weight: bold;
@@ -17,7 +21,7 @@
   border: 0;
 }
 
-.red {
+.reveal .red {
   color: red;
 }
 
