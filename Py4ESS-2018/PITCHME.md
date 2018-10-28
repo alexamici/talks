@@ -14,11 +14,11 @@ Workshop on developing Python frameworks for earth system sciences,
 
 ### Motivation
 
-Here at ECMWF we @fa[heart fa-spin red] the GRIB format...
+Here at ECMWF we @fa[heart red] the GRIB format...
 
-... and we @fa[heart fa-spin red] Open Source...
+... and we @fa[heart red] Open Source...
 
-... and we @fa[heart fa-spin red] Python 
+... and we @fa[heart red] Python 
 
 +++
 
