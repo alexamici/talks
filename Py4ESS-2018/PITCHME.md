@@ -70,9 +70,10 @@ Python numerical stack, with as good a support as netCDF!
 - *xarray* read-only backend
 - ... and more
 @ulend
+</div>
+
 <div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
-
 </div>
 
 ---
