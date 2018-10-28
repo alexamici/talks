@@ -60,9 +60,7 @@ Python numerical stack, with as good a support as netCDF!
 
 +++
 
-### Here comes *cfgrib*
-
-(Was *xarray-grib-driver*)
+### Here comes *cfgrib* (was *xarray-grib-driver*)
 
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
 
