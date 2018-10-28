@@ -39,10 +39,10 @@ Python numerical stack, with as good a support as netCDF!
 
 - full GRIB support in *xarray*
   - gateway to the Python numerical stack: *Numpy*, *Matplotlib*, *Jupyter*, *Dask*, *Iris*, etc.
-  - robust map to Unidata's *Common Data Model v4* with CF-Conventions
+  - robust map to Unidata's *Common Data Model v4* with *CF-Conventions*
 - delightful (!) install experience
-  - full support of Python 3 and PyPy
-  - major distribution channels: PyPI, conda, source
+  - full support of Python 3 and *PyPy*
+  - major distribution channels: *PyPI*, *conda*, source
 
 @ulend
 
@@ -50,17 +50,17 @@ Python numerical stack, with as good a support as netCDF!
 
 ### GRIB support in Python
 
-- pygrib, pupygrib, ecCodes - No CMD
-- PyNIO
+- *pygrib*, *pupygrib*, *ecCodes* - No CMD
+- *PyNIO*
  - Pros: xarray backend, conda
  - Cons: partial CDM support, Python 2-only, no PyPI, read-only
-- Iris-grib
+- *Iris-grib*
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
 
 +++
 
-### Here comes *cfgrib*
+### Here comes *cfgrib* (was *xarray-grib*)
 
 Python interface to map GRIB files to the NetCDF Common Data Model following the CF Conventions.
 The high level API is designed to support a GRIB backend for xarray
