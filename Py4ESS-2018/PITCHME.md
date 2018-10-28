@@ -188,6 +188,7 @@ Coordinates:
 Attributes:
     GRIB_paramId:                             130
     GRIB_shortName:                           t
+    GRIB_units:                               K
     GRIB_missingValue:                        9999
     GRIB_typeOfLevel:                         isobaricInhPa
     GRIB_gridType:                            regular_ll
