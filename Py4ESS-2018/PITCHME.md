@@ -62,8 +62,7 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Here comes *cfgrib* (was *xarray-grib-driver*)
 
-@snap[west span-60]
-
+<div class="left">
 @ul[](false)
 - ecCodes bindings via CFFI for Python 3 and PyPy
 - GRIB-level API: *FileStream*, *FileIndex* and *Message*
@@ -71,12 +70,9 @@ Python numerical stack, with as good a support as netCDF!
 - *xarray* read-only backend
 - ... and more
 @ulend
-
-@snapend
-
-@snap[east span-30]
+<div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
-@snapend
+</div>
 
 ---
 
