@@ -12,9 +12,7 @@ Workshop on developing Python frameworks for earth system sciences,
 
 ---
 
-### Motivation
-
-Here at ECMWF...
+### Here at ECMWF...
 
 @ul
 
