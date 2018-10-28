@@ -62,7 +62,7 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Here comes *cfgrib* (was *xarray-grib-driver*)
 
-@snap[west]
+@snap[west span-60]
 
 @ul
 - ecCodes bindings via CFFI for Python 3 and PyPy
@@ -75,7 +75,7 @@ Python numerical stack, with as good a support as netCDF!
 
 @snapend
 
-@snap[east]
+@snap[east span-40]
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
 @snapend
 
