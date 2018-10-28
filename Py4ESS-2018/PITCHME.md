@@ -106,11 +106,11 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Install *ecCodes*
 
-With conda:
+With conda
 ```shell
 $ conda install eccodes
 ```
-On Ubuntu:
+On Ubuntu
 ```shell
 $ sudo apt-get install libeccodes0
 ```
@@ -123,18 +123,19 @@ $ brew install eccodes
 
 ### Install cfgrib
 
-Install *cfgrib*:
+Install *cfgrib*
 ```shell
 $ pip install cfgrib
 ```
-Run *cfgrib* selfcheck:
+
+Run *cfgrib* selfcheck
 ```shell
 $ python -m cfgrib selfcheck
 Found: ecCodes v2.7.0.
 Your system is ready.
 ```
 
-Install *xarray*:
+Install *xarray*
 ```shell
 $ pip install xarray>=0.11
 ```
