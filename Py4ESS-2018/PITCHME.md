@@ -63,7 +63,7 @@ Python numerical stack, with as good a support as netCDF!
 ### Here comes *cfgrib* (was *xarray-grib-driver*)
 
 <div class="left">
-@ul[](false)
+@ul
 - ecCodes bindings via CFFI for Python 3 and PyPy
 - GRIB-level API: *FileStream*, *FileIndex* and *Message*
 - ‎‎CDM-level API: *Dataset* and *Variable*, inspired to *NetCDF-Python* and *h5netcdf*
