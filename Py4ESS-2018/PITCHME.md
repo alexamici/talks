@@ -5,7 +5,7 @@ Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
-@snap[south]
+@snap[south small]
 Workshop on developing Python frameworks for earth system sciences,
 2018-10-30, ECMWF, Reading.
 @snapend
