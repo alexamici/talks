@@ -200,17 +200,27 @@ Attributes:
 
 +++
 
-### GRIB Coordinates
+### GRIB time coordinate
 
 ```python
 >>> ds.time
 <xarray.DataArray 'time' (time: 4)>
-array(['2017-01-01T00:00:00.000000000', ... '2017-01-02T12:00:00.000000000'], dtype='datetime64[ns]')
+array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
+       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
+      dtype='datetime64[ns]')
 Coordinates:
   * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    valid_time  (time) datetime64[ns] ...
 Attributes:
     standard_name:  forecast_reference_time
     long_name:      initial time of forecast
+```
+
++++
+
+### GRIB step coordinate
+
+```python
 >>> ds.step
 <xarray.DataArray 'step' ()>
 array(0, dtype='timedelta64[ns]')
@@ -219,10 +229,18 @@ Coordinates:
 Attributes:
     standard_name:  forecast_period
     long_name:      time since forecast_reference_time
+```
+
++++
+
+### GRIB vertical level coordinate
+
+```python
 >>> ds.isobaricInhPa
 <xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
 array([850., 500.])
 Coordinates:
+    step           timedelta64[ns] 00:00:00
   * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
 Attributes:
     units:          hPa
@@ -231,6 +249,39 @@ Attributes:
     long_name:      pressure
 ```
 
++++
+
+### GRIB geographic coordinates
+
+```python
+>>> ds.latitude
+<xarray.DataArray 'latitude' (latitude: 61)>
+array([ 90.,  87.,  ... -87., -90.])
+Coordinates:
+  * latitude  (latitude) float64 90.0 87.0 84.0 81.0 ... -81.0 -84.0 -87.0 -90.0
+Attributes:
+    units:          degrees_north
+    standard_name:  latitude
+    long_name:      latitude
+```
+
++++
+
+### GRIB valid_time coordinate
+
+```python
+>>> ds.valid_time
+<xarray.DataArray 'valid_time' (time: 4)>
+array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
+       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
+      dtype='datetime64[ns]')
+Coordinates:
+  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    valid_time  (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+Attributes:
+    standard_name:  time
+    long_name:      time
+```
 
 ---
 
