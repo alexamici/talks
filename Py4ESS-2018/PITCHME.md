@@ -142,7 +142,7 @@ $ pip install xarray>=0.11
 
 +++
 
-### Open a GRIB file
+### GRIB Dataset
 
 ```python
 >>> import cfgrib
@@ -167,6 +167,55 @@ Attributes:
     GRIB_centreDescription:  European Centre for Medium-Range Weather Forecasts
     GRIB_subCentre:          0
     history:                 GRIB to CDM+CF via cfgrib-0.9.../ecCodes-2...
+```
+
++++
+
+### GRIB DataArray
+ 
+```python
+>>> ds.t
+<xarray.DataArray 't' (number: 10, time: 4, isobaricInhPa: 2, latitude: 61, longitude: 120)>
+[585600 values with dtype=float32]
+Coordinates:
+  * number         (number) int64 0 1 2 3 4 5 6 7 8 9
+  * time           (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    step           timedelta64[ns] ...
+  * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
+  * latitude       (latitude) float64 90.0 87.0 84.0 81.0 ... -84.0 -87.0 -90.0
+  * longitude      (longitude) float64 0.0 3.0 6.0 9.0 ... 351.0 354.0 357.0
+    valid_time     (time) datetime64[ns] ...
+Attributes:
+    GRIB_paramId:                             130
+    GRIB_shortName:                           t
+    GRIB_units:                               K
+    GRIB_name:                                Temperature
+    GRIB_cfName:                              air_temperature
+    GRIB_cfVarName:                           t
+    GRIB_dataType:                            an
+    GRIB_missingValue:                        9999
+    GRIB_numberOfPoints:                      7320
+    GRIB_totalNumber:                         10
+    GRIB_typeOfLevel:                         isobaricInhPa
+    GRIB_NV:                                  0
+    GRIB_stepUnits:                           1
+    GRIB_stepType:                            instant
+    GRIB_gridType:                            regular_ll
+    GRIB_gridDefinitionDescription:           Latitude/Longitude Grid
+    GRIB_Ni:                                  120
+    GRIB_iDirectionIncrementInDegrees:        3.0
+    GRIB_iScansNegatively:                    0
+    GRIB_longitudeOfFirstGridPointInDegrees:  0.0
+    GRIB_longitudeOfLastGridPointInDegrees:   357.0
+    GRIB_Nj:                                  61
+    GRIB_jDirectionIncrementInDegrees:        3.0
+    GRIB_jPointsAreConsecutive:               0
+    GRIB_jScansPositively:                    0
+    GRIB_latitudeOfFirstGridPointInDegrees:   90.0
+    GRIB_latitudeOfLastGridPointInDegrees:    -90.0
+    standard_name:                            air_temperature
+    long_name:                                Temperature
+    units:                                    K
 ```
 
 ---
