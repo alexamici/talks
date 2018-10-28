@@ -106,8 +106,17 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Install
 
+With conda:
+```shell
+$ conda install eccodes
+```
+On Ubuntu 18.04:
 ```shell
 $ sudo apt install libeccodes0
+```
+On MacOS with homebrew
+```shell
+$ brew install eccodes
 ```
 
 ```shell
