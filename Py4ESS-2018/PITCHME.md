@@ -120,11 +120,9 @@ Python numerical stack, with as good a support as netCDF!
   - Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
 
 ---
-@transition[none]
+@layout[center]
 
-@snap[center]
 ### Thank you!
-@snapend
 
 Alessandro Amici, B-Open, Rome
 
