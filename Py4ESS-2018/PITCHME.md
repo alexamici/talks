@@ -123,13 +123,18 @@ $ brew install eccodes
 
 ### Install cfgrib
 
+Install *cfgrib*:
 ```shell
 $ pip install cfgrib
-$ ptyhon -m cfgrib selfcheck
+```
+Run *cfgrib* selfcheck:
+```shell
+$ python -m cfgrib selfcheck
 Found: ecCodes v2.7.0.
 Your system is ready.
 ```
 
+Install *xarray*:
 ```shell
 $ pip install xarray>=0.11
 ```
