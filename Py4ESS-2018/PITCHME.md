@@ -240,7 +240,6 @@ Attributes:
 <xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
 array([850., 500.])
 Coordinates:
-    step           timedelta64[ns] 00:00:00
   * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
 Attributes:
     units:          hPa
@@ -263,6 +262,15 @@ Attributes:
     units:          degrees_north
     standard_name:  latitude
     long_name:      latitude
+>>> ds.longitude
+<xarray.DataArray 'longitude' (longitude: 120)>
+array([  0.,   3.,  ... 354., 357.])
+Coordinates:
+  * longitude  (longitude) float64 0.0 3.0 6.0 9.0 ... 348.0 351.0 354.0 357.0
+Attributes:
+    units:          degrees_east
+    standard_name:  longitude
+    long_name:      longitude
 ```
 
 +++
