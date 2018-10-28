@@ -135,4 +135,4 @@ Alessandro Amici, B-Open, Rome
 @fa[firefox] http://bopen.eu
 <br>
 Slides: https://gitpitch.com/alexamici/talks
-
+@cssend
