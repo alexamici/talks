@@ -198,6 +198,45 @@ Attributes:
     units:                                    K
 ```
 
++++
+
+### GRIB Coordinates
+
+```python
+>>> ds.time
+<xarray.DataArray 'time' (time: 4)>
+array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
+       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
+      dtype='datetime64[ns]')
+Coordinates:
+  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    step        timedelta64[ns] ...
+    valid_time  (time) datetime64[ns] ...
+Attributes:
+    standard_name:  forecast_reference_time
+    long_name:      initial time of forecast
+>>> ds.step
+<xarray.DataArray 'step' ()>
+array(0, dtype='timedelta64[ns]')
+Coordinates:
+    step     timedelta64[ns] 00:00:00
+Attributes:
+    standard_name:  forecast_period
+    long_name:      time since forecast_reference_time
+>>> ds.isobaricInhPa
+<xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
+array([850., 500.])
+Coordinates:
+    step           timedelta64[ns] 00:00:00
+  * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
+Attributes:
+    units:          hPa
+    positive:       down
+    standard_name:  air_pressure
+    long_name:      pressure
+```
+
+
 ---
 
 ## To summarise
