@@ -3,11 +3,11 @@
 
 Alessandro Amici, B-Open, Rome
 
-@ul[np-bullets](false)
-- @fa[twitter] [@alexamici](https://twitter.com/alexamici)
-- @fa[github] [@alexamici](https://github.com/alexamici)
-- @fa[firefox] http://bopen.eu
-@ulend
+@fa[twitter] [@alexamici](https://twitter.com/alexamici)
+
+@fa[github] [@alexamici](https://github.com/alexamici)
+
+@fa[firefox] http://bopen.eu
 
 @snap[south small]
 Workshop on developing Python frameworks for earth system sciences,
