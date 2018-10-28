@@ -120,10 +120,7 @@ Python numerical stack, with as good a support as netCDF!
 
 ---
 
-
-@snap[north]
-@css[big](Thank you!)
-@snapend
+### Thank you!
 
 Alessandro Amici, B-Open, Rome
 
