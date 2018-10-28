@@ -60,7 +60,8 @@ Python numerical stack, with as good a support as netCDF!
 
 +++
 
-### Here comes *cfgrib* (was *xarray-grib*)
+### Here comes *cfgrib*
+#### (was *xarray-grib-driver*)
 
 Python interface to map GRIB files to the NetCDF Common Data Model following the CF Conventions.
 The high level API is designed to support a GRIB backend for xarray
