@@ -67,7 +67,7 @@ Python numerical stack, with as good a support as netCDF!
 
 +++
 
-### Here comes *cfgrib* (was *xarray-grib-driver*)
+### Here comes *cfgrib*
 
 <div class="left">
 @ul
@@ -92,6 +92,7 @@ Python numerical stack, with as good a support as netCDF!
 - 2018-05: start of public *cfgrib*
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
+- 2018-??: *xarray* v0.11 is released with *cfgrib* backend
 
 ---
 
@@ -133,7 +134,7 @@ Python numerical stack, with as good a support as netCDF!
 @ul
 
 - no *conda* package, for now,
-- *PyPI* binary package does not include ecCodes, for now,
+- *PyPI* binary package does not include *ecCodes*, for now,
 - incomplete documentation, for now,
 - no *Windows* support, for now,
 - rely on *ecCodes* for the CF attributes of the data variables,
