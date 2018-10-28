@@ -1,24 +1,33 @@
 
 ### cfgrib: easy and efficient GRIB file access in xarray
 
-
 Alessandro Amici, B-Open, Rome
 
 [@alexamici](https://twitter.com/alexamici) - http://bopen.eu
 
 <span class='small'>
-Workshop on developing Python frameworks for earth system sciences, 2018-10-30, ECMWF, Reading.
+Workshop on developing Python frameworks for earth system sciences,
+2018-10-30, ECMWF, Reading.
 </span>
 
 ---
 
 ### Motivation
 
-We would love the GRIB format to be a first-class citizens in the Python numerical stack...
+Here at ECMWF we :heart: the GRIB format...
 
-... with as good a support as netCDF!
+... and we :heart: Open Source...
+
+... and we :heart: Python 
 
 +++
+
+### Motivation
+
+We would love the GRIB format to be a first-class citizens in the
+Python numerical stack, with as good a support as netCDF!
+
+---
 
 ### Desiderata
 
@@ -41,6 +50,15 @@ We would love the GRIB format to be a first-class citizens in the Python numeric
 - Iris-grib
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
+
++++
+
+### Here comes *cfgrib*
+
+Python interface to map GRIB files to the NetCDF Common Data Model following the CF Conventions.
+The high level API is designed to support a GRIB backend for xarray
+and it is inspired by NetCDF-python and h5netcdf.
+Low level access and decoding is performed via the ECMWF ecCodes library.
 
 ---
 
@@ -73,7 +91,7 @@ We would love the GRIB format to be a first-class citizens in the Python numeric
 
 ---
 
-### Teams and Credits
+### Team
 
  * ECMWF: Stephan Siemen, Iain Russell and Baudouin Raoult
  * B-Open: Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
@@ -81,7 +99,6 @@ We would love the GRIB format to be a first-class citizens in the Python numeric
 ---
 
 ### Thank you!
-#### Do we have time for Q/A?
 
 Alessandro Amici, B-Open, Rome
 
