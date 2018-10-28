@@ -82,24 +82,34 @@ Python numerical stack, with as good a support as netCDF!
 ---
 
 ### cfgrib features in beta
-   
+
+@ul
+
 - reads most GRIB 1 and 2 files,
 - supports all modern versions of Python 3.7, 3.6, 3.5 and 2.7, plus PyPy and PyPy3,
 - works on most *Linux* distributions and *MacOS*, *ecCodes* C-library is the only system dependency,
 - you can `pip install cfgrib` with no install time build (binds with *CFFI* ABI mode),
 - reads the data lazily and efficiently in terms of both memory usage and disk access.
 
+@ulend
+
 +++
 
 ### cfgrib work in progress
+
+@ul
 
 - **Alpha** supports saving the index of a GRIB file to disk, to save a full-file scan on open,
 - **Pre-Alpha** support to write carefully-crafted `xarray.Dataset`'s to a GRIB2 file,
 - the target is mostly correctness, but we started working on performance.
 
+@ulend
+
 +++
 
 ### cfgrib limitations
+
+@ul
 
 - no *conda* package, for now,
 - *PyPI* binary package does not include ecCodes,
@@ -107,6 +117,8 @@ Python numerical stack, with as good a support as netCDF!
 - no *Windows* support, for now,
 - rely on *ecCodes* for the CF attributes of the data variables,
 - rely on *ecCodes* for the `gridType` handling.
+
+@ulend
 
 ---
 
@@ -125,6 +137,6 @@ Alessandro Amici, B-Open, Rome
 
 @css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
 
-@snap[south]
+@snap[south span-60]
 @css[regular](Slides: https://gitpitch.com/alexamici/talks)
 @snapend
