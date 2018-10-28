@@ -104,7 +104,7 @@ Python numerical stack, with as good a support as netCDF!
 
 +++
 
-### Install
+### Install *ecCodes*
 
 With conda:
 ```shell
@@ -118,6 +118,11 @@ On MacOS with homebrew
 ```shell
 $ brew install eccodes
 ```
+
++++
+
+### Install cfgrib
+
 
 ```shell
 $ pip install cfgrib
