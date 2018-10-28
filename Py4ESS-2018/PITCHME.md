@@ -75,9 +75,6 @@ Python numerical stack, with as good a support as netCDF!
 
 @snapend
 
-@snap[east span-40]
-![cfgrib-pypi](assets/cfgrib-pypi.png)
-@snapend
 
 ---
 
