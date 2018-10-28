@@ -64,9 +64,9 @@ Python numerical stack, with as good a support as netCDF!
 
 <div class="left">
 <ul>
-        <li>ecCodes Python 3 bindings</li>
-        <li>Low-level API: FileStream and Message</li>
-        <li>‎‎High-level API:  Dataset Variable</li>
+        <li>ecCodes bindings via CFFI - inspired to ecCodes</li>
+        <li>Low-level API: <em>FileStream</em> and <em>Message</em> - inspired to ecCodes high-level</li>
+        <li>‎‎High-level API: <em>Dataset</em> and <em>Variable</em> - inspired to NetCDF-python </li>
         <li>*xarray* backend</li>
     </ul>
 </div>
