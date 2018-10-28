@@ -121,9 +121,8 @@ Python numerical stack, with as good a support as netCDF!
 
 @ul
 
-- **Alpha** supports saving the index of a GRIB file to disk, to save a full-file scan on open,
-- **Pre-Alpha** support to write carefully-crafted `xarray.Dataset`'s to a GRIB2 file,
-- the target is mostly correctness, but we started working on performance.
+- **Alpha** supports writing the index of a GRIB file to disk, to save a full-file scan on open,
+- **Pre-Alpha** support to write carefully-crafted `xarray.Dataset`'s to a GRIB2 file.
 
 @ulend
 
@@ -134,7 +133,7 @@ Python numerical stack, with as good a support as netCDF!
 @ul
 
 - no *conda* package, for now,
-- *PyPI* binary package does not include ecCodes,
+- *PyPI* binary package does not include ecCodes, for now,
 - incomplete documentation, for now,
 - no *Windows* support, for now,
 - rely on *ecCodes* for the CF attributes of the data variables,
