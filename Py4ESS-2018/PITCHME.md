@@ -62,7 +62,18 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Here comes *cfgrib* (was *xarray-grib-driver*)
 
+<div class="left">
+<ul>
+        <li>ecCodes Python 3 bindings</li>
+        <li>Low-level API: FileStream and Message</li>
+        <li>‎‎High-level API:  Dataset Variable</li>
+        <li>*xarray* backend</li>
+    </ul>
+</div>
+<div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
+
+</div>
 
 ---
 
