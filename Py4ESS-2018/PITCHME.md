@@ -122,8 +122,8 @@ Python numerical stack, with as good a support as netCDF!
 ---
 
 @snap[centre]
-
 ### Thank you!
+@snapend
 
 Alessandro Amici, B-Open, Rome
 
@@ -133,4 +133,3 @@ Alessandro Amici, B-Open, Rome
 Slides: https://gitpitch.com/alexamici/talks
 </span>
 
-@snapend
