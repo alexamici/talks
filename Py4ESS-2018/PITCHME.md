@@ -30,7 +30,7 @@ Workshop on developing Python frameworks for earth system sciences,
 We would love the GRIB format to be a first-class citizens in the
 Python numerical stack, with as good a support as netCDF!
 
----
++++
 
 ### Desiderata
 
@@ -45,7 +45,7 @@ Python numerical stack, with as good a support as netCDF!
 
 @ulend
 
-+++
+---
 
 ### GRIB support in Python
 
