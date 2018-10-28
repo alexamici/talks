@@ -14,9 +14,11 @@ Workshop on developing Python frameworks for earth system sciences,
 
 ### Motivation
 
+Here at ECMWF...
+
 @ul
 
-- Here at ECMWF we @fa[heart red] the GRIB format...
+- ... we @fa[heart red] the GRIB format...
 - ... and we @fa[heart red] Open Source...
 - ... and we @fa[heart red] Python 
 
@@ -36,7 +38,7 @@ Python numerical stack, with as good a support as netCDF!
 @ul
 
 - full GRIB support in *xarray*
-  - gateway to the Python numerical stack: Numpy, Matplotlib, Jupyter, Dask, Iris, etc.
+  - gateway to the Python numerical stack: *Numpy*, *Matplotlib*, *Jupyter*, *Dask*, *Iris*, etc.
   - robust map to Unidata's *Common Data Model v4* with CF-Conventions
 - delightful (!) install experience
   - full support of Python 3 and PyPy
