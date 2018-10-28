@@ -87,12 +87,16 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Storyline
 
+@ul
+
 - 2016-10: first prototype by ECMWF
 - 2017-09: start of private *xarray-grib-driver*
 - 2018-05: start of public *cfgrib*
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
-- 2018-??: *xarray* v0.11 is released with *cfgrib* backend
+- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend
+
+@ulend
 
 ---
 
