@@ -100,7 +100,20 @@ Python numerical stack, with as good a support as netCDF!
 
 ---
 
-### 
+## The user journey
+
++++
+
+### Install
+
+```shell
+$ sudo apt install libeccodes0
+```
+
+```shell
+$ pip install cfgrib
+$ pip install xarray>=0.11
+```
 
 ---
 
