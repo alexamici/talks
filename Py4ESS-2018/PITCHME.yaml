@@ -3,3 +3,4 @@ background-size: contain
 theme-override: assets/Py4ESS.css
 published: false
 theme: beige
+layout : center-left
