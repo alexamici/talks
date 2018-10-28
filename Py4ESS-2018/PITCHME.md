@@ -72,6 +72,7 @@ Python numerical stack, with as good a support as netCDF!
 @ulend
 <div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
+
 </div>
 
 ---
