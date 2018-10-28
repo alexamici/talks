@@ -127,13 +127,11 @@ Python numerical stack, with as good a support as netCDF!
 
 Alessandro Amici, B-Open, Rome
 
-@fa[twitter] [@alexamici](https://twitter.com/alexamici)
+@css[small](@fa[twitter] [@alexamici](https://twitter.com/alexamici))
 <br>
-@fa[github] [@alexamici](https://github.com/alexamici)
+@css[small](@fa[github] [@alexamici](https://github.com/alexamici))
 <br>
-@fa[firefox] http://bopen.eu
-
-<span class='small'>
-Slides: https://gitpitch.com/alexamici/talks
-</span>
+@css[small](@fa[firefox] http://bopen.eu)
+<br>
+@css[small](Slides: https://gitpitch.com/alexamici/talks)
 
