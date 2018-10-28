@@ -126,5 +126,5 @@ Alessandro Amici, B-Open, Rome
 @css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
 
 @snap[south]
-Slides: https://gitpitch.com/alexamici/talks
+@css[regular](Slides: https://gitpitch.com/alexamici/talks)
 @snapend
