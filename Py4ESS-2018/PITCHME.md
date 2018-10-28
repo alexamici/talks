@@ -69,7 +69,7 @@ Python numerical stack, with as good a support as netCDF!
         <li>‎‎CDM-level API: *Dataset* and *Variable*, 
             inspired to *NetCDF-Python* and *h5netcdf*</li>
         <li>*xarray* read-only backend</li>
-        <li>*xarray* `to_grib` helper</li>
+        <li>... and more</li>
     </ul>
 </div>
 <div class="right">
