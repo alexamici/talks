@@ -188,31 +188,10 @@ Coordinates:
 Attributes:
     GRIB_paramId:                             130
     GRIB_shortName:                           t
-    GRIB_units:                               K
-    GRIB_name:                                Temperature
-    GRIB_cfName:                              air_temperature
-    GRIB_cfVarName:                           t
-    GRIB_dataType:                            an
     GRIB_missingValue:                        9999
-    GRIB_numberOfPoints:                      7320
-    GRIB_totalNumber:                         10
     GRIB_typeOfLevel:                         isobaricInhPa
-    GRIB_NV:                                  0
-    GRIB_stepUnits:                           1
-    GRIB_stepType:                            instant
     GRIB_gridType:                            regular_ll
-    GRIB_gridDefinitionDescription:           Latitude/Longitude Grid
-    GRIB_Ni:                                  120
-    GRIB_iDirectionIncrementInDegrees:        3.0
-    GRIB_iScansNegatively:                    0
-    GRIB_longitudeOfFirstGridPointInDegrees:  0.0
-    GRIB_longitudeOfLastGridPointInDegrees:   357.0
-    GRIB_Nj:                                  61
-    GRIB_jDirectionIncrementInDegrees:        3.0
-    GRIB_jPointsAreConsecutive:               0
-    GRIB_jScansPositively:                    0
-    GRIB_latitudeOfFirstGridPointInDegrees:   90.0
-    GRIB_latitudeOfLastGridPointInDegrees:    -90.0
+    ...
     standard_name:                            air_temperature
     long_name:                                Temperature
     units:                                    K
