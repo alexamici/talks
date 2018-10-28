@@ -33,13 +33,17 @@ Python numerical stack, with as good a support as netCDF!
 
 ### Desiderata
 
+@ul
+
 - full GRIB support in *xarray*
+  - gateway to the Python numerical stack: Numpy, Matplotlib, Jupyter, Dask, Iris, etc.
   - robust map to Unidata's *Common Data Model v4* with CF-Conventions
-  - gateway to Numpy, Matplotlib, Jupyter, Dask, Iris, etc.
 
 - user friendly install
   - full support of Python 3 and PyPy3
   - major distribution channels: PyPI, conda, source
+
+@ulend
 
 +++
 
