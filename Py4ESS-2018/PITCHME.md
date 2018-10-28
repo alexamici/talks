@@ -64,7 +64,7 @@ Python numerical stack, with as good a support as netCDF!
 
 <div class="left">
 <ul>
-        <li>ecCodes Python 2 and 3 bindings via CFFI</li>
+        <li>ecCodes bindings via CFFI for Python 3 and PyPy</li>
         <li>GRIB-level API: *FileStream*, *FileIndex* and *Message*</li>
         <li>‎‎CDM-level API: *Dataset* and *Variable*, 
             inspired to NetCDF-Python and h5netcdf</li>
