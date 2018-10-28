@@ -14,11 +14,11 @@ Workshop on developing Python frameworks for earth system sciences,
 
 ### Motivation
 
-Here at ECMWF we :heart: the GRIB format...
+Here at ECMWF we @fa[heart] the GRIB format...
 
-... and we :heart: Open Source...
+... and we @fa[heart] Open Source...
 
-... and we :heart: Python 
+... and we @fa[heart] Python 
 
 +++
 
@@ -33,7 +33,7 @@ Python numerical stack, with as good a support as netCDF!
 
 - full GRIB support in *xarray*
   - robust map to Unidata's *Common Data Model v4* with CF-Conventions
-  - gateway to Iris, Numpy, etc.
+  - gateway to Numpy, Matplotlib, Jupyter, Dask, Iris, etc.
 
 - user friendly install
   - full support of Python 3 and PyPy3
@@ -93,8 +93,10 @@ Low level access and decoding is performed via the ECMWF ecCodes library.
 
 ### Team
 
- * ECMWF: Stephan Siemen, Iain Russell and Baudouin Raoult
- * B-Open: Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
+- ECMWF
+  - Stephan Siemen, Iain Russell and Baudouin Raoult
+- B-Open
+  - Alessandro Amici, Aureliana Barghini and Leonardo Barcaroli
 
 ---
 
