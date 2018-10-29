@@ -366,7 +366,7 @@ ValueError: multiple values for unique attribute
 ### GRIB is a generic container
 
 - North American Model (NAM) GRIB2
- - variable `gh` for `isobaricInhPa`, `cloudBase`, `cloudTop`, `maxWind`, `isothermZero`
+ - variable `gh` for `isobaricInhPa`, `cloudBase`, `cloudTop`, `maxWind` and `isothermZero`
 - Global Forecast System (GFS) v4 GRIB2
  - variables `gh` and `clwmr` are defined on different values of `isobaricInhPa`
 
@@ -375,7 +375,8 @@ ValueError: multiple values for unique attribute
 ### Message filtering
 
 ```python
->>> cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2', backend_kwargs=dict(filter_by_keys={'typeOfLevel': 'cloudTop'}))
+>>> cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2',
+...   backend_kwargs=dict(filter_by_keys={'typeOfLevel': 'cloudTop'}))
 <xarray.Dataset>
 Dimensions:     (x: 93, y: 65)
 Coordinates:
