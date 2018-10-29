@@ -74,7 +74,7 @@ ECMWF hired B-Open to make that happen.
 @ul
 
 - 2016-10: first prototype by ECMWF
-- 2017-09: start of private *xarray-grib-driver* by B-Open
+- 2017-09: start of private *xarray-grib* by B-Open
 - 2018-05: start of public *cfgrib*
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
