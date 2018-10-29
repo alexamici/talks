@@ -12,7 +12,7 @@ Workshop on developing Python frameworks for earth system sciences,
 
 ---
 
-## The motivation
+## Motivation
 
 +++
 
@@ -29,14 +29,19 @@ Workshop on developing Python frameworks for earth system sciences,
 
 +++
 
-### The goal
+### Goal
 
 We would love the GRIB format to be a first-class citizens in the
 Python numerical stack, with as good a support as netCDF!
 
+
+---
+
+## Development
+
 +++
 
-### Desiderata
+### Requirements
 
 @ul
 
@@ -49,13 +54,9 @@ Python numerical stack, with as good a support as netCDF!
 
 @ulend
 
----
-
-## The journey
-
 +++
 
-### GRIB support in Python
+### State of the art
 
 - *pygrib*, *pupygrib*, *ecCodes* - No CMD
 - *PyNIO*
@@ -64,6 +65,21 @@ Python numerical stack, with as good a support as netCDF!
 - *Iris-grib*
  - Pros: xarray conversion, read-write, conda
  - Cons: Python 2-only, domain specific
+
++++
+
+### Storyline
+
+@ul
+
+- 2016-10: first prototype by ECMWF
+- 2017-09: start of private *xarray-grib-driver* by B-Open
+- 2018-05: start of public *cfgrib*
+- 2018-07: first public **alpha** release of *cfgrib*
+- 2018-10: *cfgrib* enters **beta**
+- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend
+
+@ulend
 
 +++
 
@@ -83,24 +99,9 @@ Python numerical stack, with as good a support as netCDF!
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
 </div>
 
-+++
-
-### Storyline
-
-@ul
-
-- 2016-10: first prototype by ECMWF
-- 2017-09: start of private *xarray-grib-driver*
-- 2018-05: start of public *cfgrib*
-- 2018-07: first public **alpha** release of *cfgrib*
-- 2018-10: *cfgrib* enters **beta**
-- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend
-
-@ulend
-
 ---
 
-## The user journey
+## User journey
 
 +++
 
@@ -137,7 +138,7 @@ Your system is ready.
 
 Install *xarray*
 ```shell
-$ pip install xarray>=0.11
+$ pip install xarray>=0.10.9
 ```
 
 +++
