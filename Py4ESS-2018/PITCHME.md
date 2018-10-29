@@ -358,8 +358,17 @@ ValueError: multiple values for unique attribute
 - A GRIB *stream*, a file, is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - *Message* metadata (keys) can be regarded as additional coordinates: `time`, `level`, etc.
-- GRIB *messages* in the same *stream* are completely independent, **there's no guarantee whatsoever**
 - *MARS* retrievals are typically nice hypercubes
+- *Messages* in a *stream* are completely independent, **there's no guarantee**
+
++++
+
+### GRIB as a generic container
+
+- North American Model (NAM) GRIB2
+ - variable `gh` for `isobaricInhPa`, `cloudBase`, `cloudTop`, `maxWind`, `isothermZero`
+- Global Forecast System (GFS) v4
+ - varable `gh` and `clwmr` are defined on different values of `isobaricInhPa`
 
 ---
 
