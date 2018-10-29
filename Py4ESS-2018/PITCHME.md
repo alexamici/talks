@@ -106,7 +106,7 @@ ECMWF hired B-Open to make that happen.
 
 +++
 
-### Install *ecCodes*
+### Install *ecCodes* C-library
 
 With conda
 ```shell
@@ -170,6 +170,15 @@ Attributes:
     GRIB_subCentre:          0
     history:                 GRIB to CDM+CF via cfgrib-0.9.../ecCodes-2...
 ```
+
++++
+
+### Naming from ecCodes
+
+- Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed
+- Variable names are *ecCodes* `cfVarName` if available or `shortName`
+  - for example for variable 2m temperature `shortName=='2t'` and `cfVarName=='t2m'`
+- CF attributes `long_name`, `units` and `standard_name` are taken from *ecCodes* `name`, `units` and `cfName`
 
 +++
 
