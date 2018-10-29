@@ -176,8 +176,7 @@ Attributes:
 ### Naming from ecCodes
 
 - Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed
-- Variable names are *ecCodes* `cfVarName` if available or `shortName`
-  - for example for variable 2m temperature `shortName=='2t'` and `cfVarName=='t2m'`
+- Variable name is `GRIB_cfVarName` if available or `GRIB_shortName`
 - CF attributes are taken from *ecCodes*: `name` -> `long_name`, `units` -> `units` and `cfName` -> `standard_name`
 
 +++
