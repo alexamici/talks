@@ -354,7 +354,7 @@ ValueError: multiple values for unique attribute
 - A GRIB *stream* (one or more files) is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - Some *message* keys can be regarded as additional coordinates: `time`, `level`, etc.
-- **GRIB messages are completly independent**
+- **GRIB messages are completely independent**
 
 ---
 
