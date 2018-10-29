@@ -343,9 +343,9 @@ ValueError: multiple values for unique attribute
 ### Common Data Model
 
 - *xarray* is based on the concept of hypercubes
- - Data variables `xr.DataArray` are N-dimensional arrays
+ - Data variables are N-dimensional arrays represented by a `xr.DataArray`
  - Some dimension are labeled by 1-dimensional coordinates
- - An `xr.Dataset` is a container of data variables with homogeneous coordinates
+ - An `xr.Dataset` is a container of data variables **with homogeneous coordinates**
 
 +++
 
