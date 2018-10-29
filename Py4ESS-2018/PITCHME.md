@@ -78,7 +78,7 @@ ECMWF hired B-Open to make that happen.
 - 2018-05: start of public *cfgrib* on GitHub
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
-- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend `xr.open_dataset('ds.grb', engine='cfgrib')`
+- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend @css[refular]()`xr.open_dataset('ds.grb', engine='cfgrib')`)
 
 @ulend
 
@@ -87,13 +87,17 @@ ECMWF hired B-Open to make that happen.
 ### Here comes *cfgrib*
 
 <div class="left">
+
 @ul
+
 - ecCodes bindings via CFFI for Python 3 and PyPy
 - GRIB-level API: *FileStream*, *FileIndex* and *Message*
 - ‎‎CDM-level API: *Dataset* and *Variable*, inspired to *h5netcdf* and *netCDF4-Python*
 - *xarray* read-only backend
 - ... and more
+
 @ulend
+
 </div>
 
 <div class="right">
