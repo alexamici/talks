@@ -218,7 +218,7 @@ Attributes:
 
 +++
 
-### GRIB time coordinate
+### time coordinate
 
 Forecast reference time / initialisation time
 ```python
@@ -237,7 +237,7 @@ Attributes:
 
 +++
 
-### GRIB step coordinate
+### step coordinate
 
 Forecast period / leadtime
 ```python
@@ -253,7 +253,7 @@ Attributes:
 
 +++
 
-### GRIB valid_time coordinate
+### valid_time coordinate
 
 Valid time / convenience auxiliary coordinate
 ```python
@@ -272,7 +272,7 @@ Attributes:
 
 +++
 
-### GRIB vertical level coordinate
+### Vertical level coordinate
 
 Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc.
 ```python
@@ -290,7 +290,7 @@ Attributes:
 
 +++
 
-### GRIB geographic coordinates
+### Geographic coordinates
 
 Computed by *ecCodes* based on `GRIB_gridType`: `regular_ll`, `regular_gg`, etc. 
 ```python
