@@ -314,6 +314,36 @@ Attributes:
     long_name:      longitude
 ```
 
++++
+
+### Then we release...
+
+```python
+>>> ds = cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/xarray_store.py", line 47, in open_dataset
+    store = cfgrib_.CfGribDataStore(path, **real_backend_kwargs)
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/cfgrib_.py", line 78, in __init__
+    self.ds = cfgrib.open_file(filename, mode='r', **backend_kwargs)
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 452, in open_file
+    return Dataset.from_path(path, **kwargs)
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 447, in from_path
+    return cls(*build_dataset_components(stream, **flavour_kwargs))
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 403, in build_dataset_components
+    filter_by_keys,
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 315, in build_data_var_components
+    data_var_attrs = enforce_unique_attributes(index, data_var_attrs_keys, filter_by_keys)
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 142, in enforce_unique_attributes
+    raise DatasetBuildError(error_message, fbks)
+cfgrib.dataset.DatasetBuildError: multiple values for unique key, try re-open the file with one of:
+    filter_by_keys={'typeOfLevel': 'isobaricInhPa'}
+    filter_by_keys={'typeOfLevel': 'cloudBase'}
+    filter_by_keys={'typeOfLevel': 'cloudTop'}
+    filter_by_keys={'typeOfLevel': 'maxWind'}
+    filter_by_keys={'typeOfLevel': 'isothermZero'}
+```
+
 ---
 
 ## To summarise
