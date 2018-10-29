@@ -177,7 +177,7 @@ Attributes:
 
 - Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed
 - Variable name is `GRIB_cfVarName` if available or `GRIB_shortName`
-- CF attributes are taken from *ecCodes*: `GRIB_name` @fa[arrow-right] `long_name`, `GRIB_units` -> `units` and `GRIB_cfName` -> `standard_name`
+- CF attributes are taken from *ecCodes*: `GRIB_name` @fa[arrow-right] `long_name`, `GRIB_units` @fa[long-arrow-right] `units` and `GRIB_cfName` -> `standard_name`
 
 +++
 
