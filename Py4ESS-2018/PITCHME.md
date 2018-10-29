@@ -358,8 +358,8 @@ ValueError: multiple values for unique attribute
 - A GRIB *stream*, a file, is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - Some *message* keys can be regarded as additional coordinates: `time`, `level`, etc.
-- *MARS* retrievals are typically nice hipercubes
-- GRIB *messages* in the same *stream* are completely independent, **there's no guarantee for hypecubes**
+- *MARS* retrievals are typically nice hypercubes
+- GRIB *messages* in the same *stream* are completely independent, **there's no guarantee whatsoever**
 
 ---
 
