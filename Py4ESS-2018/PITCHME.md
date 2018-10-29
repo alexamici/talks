@@ -430,6 +430,7 @@ Attributes:
 ### Experimental API
 
 ```python
+>>> from cfgrib import xarray_store
 >>> datasets = xarray_store.open_datasets('nam.t00z.awp21100.tm00.grib2')
 /Users/amici/devel/MPY/cfgrib/cfgrib/xarray_store.py:59: FutureWarning: open_datasets is an experimental API, DO NOT RELY ON IT!
   warnings.warn("open_datasets is an experimental API, DO NOT RELY ON IT!", FutureWarning)
