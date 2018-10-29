@@ -78,7 +78,7 @@ ECMWF hired B-Open to make that happen.
 - 2018-05: start of public *cfgrib* on GitHub
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
-- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend
+- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend `xr.open_dataset('data.grib', engine='cfgrib')`
 
 @ulend
 
@@ -354,7 +354,7 @@ ValueError: multiple values for unique attribute
 - A GRIB *stream*, a file, is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - Some *message* keys can be regarded as additional coordinates: `time`, `level`, etc.
-- GRIB messages in the same Stream are completely independent, there's **no guarantee for hypecubes**
+- GRIB *messages* in the same *stream* are completely independent, **there's no guarantee for hypecubes**
 
 ---
 
