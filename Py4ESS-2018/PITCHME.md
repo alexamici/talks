@@ -177,8 +177,7 @@ Attributes:
 
 @ul
 
-- Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed
-- We try to use *ecCodes* namespaces and edition independent keys
+- Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed. Mostly namespace and edition independent keys
 - Variable name is defined by *ecCodes*:
  - `GRIB_cfVarName` @fa[long-arrow-right] variable name
 - CF attributes are provided *ecCodes*:
