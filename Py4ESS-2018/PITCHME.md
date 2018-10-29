@@ -342,6 +342,18 @@ ValueError: multiple values for unique attribute
 
 ### Common Data Model
 
+- The CDM is based on the concept of hypercubes
+ - Data variables are N-dimensional arrays
+ - Some dimension are labeled by 1-dimensional coordinates
+
++++
+
+### GRIB
+
+- A GRIB *stream* (one or more files) is list of GRIB *messages*
+- A GRIB *message* contains a single geographic *field*
+- Some *message* keys can be regarded as coordinates: `level`, etc.
+
 ---
 
 ## To summarise
