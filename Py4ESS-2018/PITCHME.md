@@ -322,6 +322,7 @@ Attributes:
 
 ### Wrong!
 
+First bug report:
 ```python
 >>> ds = cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2')
 Traceback (most recent call last):
