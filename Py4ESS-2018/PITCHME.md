@@ -343,9 +343,9 @@ ValueError: multiple values for unique attribute
 ### Common Data Model
 
 - *xarray* is based on the concept of hypercubes
- - Data variables are N-dimensional arrays represented by a `xr.DataArray`
- - Some dimension are labeled by 1-dimensional coordinates
- - An `xr.Dataset` is a container of data variables **with homogeneous coordinates**
+- Data variables are N-dimensional arrays represented by a `xr.DataArray`
+- Some dimension are labeled by 1-dimensional coordinates
+- An `xr.Dataset` is a container of data variables **with homogeneous coordinates**
 
 +++
 
@@ -354,7 +354,7 @@ ValueError: multiple values for unique attribute
 - A GRIB *stream* (one or more files) is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - Some *message* keys can be regarded as additional coordinates: `time`, `level`, etc.
-- **GRIB messages are completely independent**
+- GRIB messages in the same Stream are completely independent, there's **no guarantee for hypecubes**
 
 ---
 
