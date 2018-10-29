@@ -178,6 +178,7 @@ Attributes:
 @ul
 
 - Attributes with the `GRIB_` prefix are *ecCodes* keys both coded and computed
+- We try to use *ecCodes* namespaces and edition independent keys
 - Variable name is defined by *ecCodes*:
  - `GRIB_cfVarName` @fa[long-arrow-right] variable name
 - CF attributes are provided *ecCodes*:
@@ -220,6 +221,7 @@ Attributes:
 
 ### GRIB time coordinate
 
+Forecast reference time / initialisation time
 ```python
 >>> ds.time
 <xarray.DataArray 'time' (time: 4)>
@@ -238,6 +240,7 @@ Attributes:
 
 ### GRIB step coordinate
 
+Forecast period / leadtime
 ```python
 >>> ds.step
 <xarray.DataArray 'step' ()>
@@ -253,6 +256,7 @@ Attributes:
 
 ### GRIB valid_time coordinate
 
+The time the forecast is valid
 ```python
 >>> ds.valid_time
 <xarray.DataArray 'valid_time' (time: 4)>
@@ -271,6 +275,7 @@ Attributes:
 
 ### GRIB vertical level coordinate
 
+Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc
 ```python
 >>> ds.isobaricInhPa
 <xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
