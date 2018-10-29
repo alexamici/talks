@@ -321,6 +321,7 @@ Attributes:
 ```python
 >>> ds = cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2')
 Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
   ...
   File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 315, in build_data_var_components
     data_var_attrs = enforce_unique_attributes(index, data_var_attrs_keys, filter_by_keys)
