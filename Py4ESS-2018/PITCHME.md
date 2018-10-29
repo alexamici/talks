@@ -351,7 +351,7 @@ ValueError: multiple values for unique attribute
 
 ### GRIB Data Model
 
-- A GRIB *stream* (one or more files) is list of GRIB *messages*
+- A GRIB *stream*, a file, is list of GRIB *messages*
 - A GRIB *message* contains a single geographic *field* with `latitude`, `longitude`
 - Some *message* keys can be regarded as additional coordinates: `time`, `level`, etc.
 - GRIB messages in the same Stream are completely independent, there's **no guarantee for hypecubes**
