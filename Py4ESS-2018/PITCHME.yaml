@@ -1,5 +1,5 @@
 background: assets/bg.png
 background-size: contain
 theme-override: assets/Py4ESS.css
-published: false
+published: true
 theme: beige
