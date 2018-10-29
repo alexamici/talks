@@ -342,9 +342,10 @@ ValueError: multiple values for unique attribute
 
 ### Common Data Model
 
-- The CDM is based on the concept of hypercubes
- - Data variables are N-dimensional arrays
+- *xarray* is based on the concept of hypercubes
+ - Data variables `xr.DataArray` are N-dimensional arrays
  - Some dimension are labeled by 1-dimensional coordinates
+ - An `xr.Dataset` is a container of data variables with homogeneous coordinates
 
 +++
 
