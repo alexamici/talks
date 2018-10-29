@@ -372,7 +372,7 @@ ValueError: multiple values for unique attribute
 
 +++
 
-### Message filtering
+### Message filtering 1/2
 
 ```python
 >>> cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2',
@@ -401,7 +401,7 @@ Attributes:
 
 +++
 
-### Message filtering
+### Message filtering 2/2
 
 ```python
 >>> cfgrib.open_dataset('gfs_4_20180804_0000_000.grb2',
@@ -423,6 +423,48 @@ Attributes:
     GRIB_centreDescription:  US National Weather Service - NCEP 
     GRIB_subCentre:          0
     history:                 GRIB to CDM+CF via cfgrib-0.9.../ecCodes-2.8...
+```
+
++++
+
+### Experimental API
+
+```python
+>>> datasets = xarray_store.open_datasets('nam.t00z.awp21100.tm00.grib2')
+/Users/amici/devel/MPY/cfgrib/cfgrib/xarray_store.py:59: FutureWarning: open_datasets is an experimental API, DO NOT RELY ON IT!
+  warnings.warn("open_datasets is an experimental API, DO NOT RELY ON IT!", FutureWarning)
+skipping variable with paramId==3041 shortName='absv'
+Traceback (most recent call last):
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 410, in build_dataset_components
+    dict_merge(dimensions, dims)
+  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 386, in dict_merge
+    "key=%r value=%r new_value=%r" % (key, master[key], value))
+cfgrib.dataset.DatasetBuildError: key present and new value is different: key='isobaricInhPa' value=19 new_value=5
+>>> len(datasets)
+5
+>>> datasets[0]
+<xarray.Dataset>
+Dimensions:        (isobaricInhPa: 19, x: 93, y: 65)
+Coordinates:
+    time           datetime64[ns] ...
+    step           timedelta64[ns] ...
+  * isobaricInhPa  (isobaricInhPa) float64 1e+03 950.0 900.0 ... 150.0 100.0
+    latitude       (y, x) float64 ...
+    longitude      (y, x) float64 ...
+    valid_time     datetime64[ns] ...
+Dimensions without coordinates: x, y
+Data variables:
+    gh             (isobaricInhPa, y, x) float32 ...
+    t              (isobaricInhPa, y, x) float32 ...
+    r              (isobaricInhPa, y, x) float32 ...
+    w              (isobaricInhPa, y, x) float32 ...
+    u              (isobaricInhPa, y, x) float32 ...
+Attributes:
+    GRIB_edition:            2
+    GRIB_centre:             kwbc
+    GRIB_centreDescription:  US National Weather Service - NCEP 
+    GRIB_subCentre:          0
+    history:                 GRIB to CDM+CF via cfgrib-0.9.4.dev0/ecCodes-2.8...
 ```
 
 ---
