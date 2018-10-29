@@ -255,7 +255,7 @@ Attributes:
 
 ### GRIB valid_time coordinate
 
-The time the forecast is valid / convenience auxiliary coordinate
+Valid time / convenience auxiliary coordinate
 ```python
 >>> ds.valid_time
 <xarray.DataArray 'valid_time' (time: 4)>
@@ -274,7 +274,7 @@ Attributes:
 
 ### GRIB vertical level coordinate
 
-Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc
+Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc.
 ```python
 >>> ds.isobaricInhPa
 <xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
