@@ -78,7 +78,7 @@ ECMWF hired B-Open to make that happen.
 - 2018-05: start of public *cfgrib* on GitHub
 - 2018-07: first public **alpha** release of *cfgrib*
 - 2018-10: *cfgrib* enters **beta**
-- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend @css[regular] `xr.open_dataset('ds.grb', engine='cfgrib')`
+- 2018-XX: *xarray* v0.11 is released with *cfgrib* backend @css[small] `xr.open_dataset('ds.grb', engine='cfgrib')`
 
 @ulend
 
