@@ -330,7 +330,8 @@ Traceback (most recent call last):
   ...
   File ".../cfgrib/dataset.py", line 150, in enforce_unique_attributes
     raise ValueError("multiple values for unique attribute %r: %r" % (key, values))
-ValueError: multiple values for unique attribute 'typeOfLevel': ['hybrid', 'cloudBase', 'unknown', 'cloudTop']
+ValueError: multiple values for unique attribute
+    'typeOfLevel': ['hybrid', 'cloudBase', 'unknown', 'cloudTop']
 ```
 
 ---
