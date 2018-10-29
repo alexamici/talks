@@ -251,6 +251,24 @@ Attributes:
 
 +++
 
+### GRIB valid_time coordinate
+
+```python
+>>> ds.valid_time
+<xarray.DataArray 'valid_time' (time: 4)>
+array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
+       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
+      dtype='datetime64[ns]')
+Coordinates:
+  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+    valid_time  (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
+Attributes:
+    standard_name:  time
+    long_name:      time
+```
+
++++
+
 ### GRIB vertical level coordinate
 
 ```python
@@ -289,24 +307,6 @@ Attributes:
     units:          degrees_east
     standard_name:  longitude
     long_name:      longitude
-```
-
-+++
-
-### GRIB valid_time coordinate
-
-```python
->>> ds.valid_time
-<xarray.DataArray 'valid_time' (time: 4)>
-array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
-       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
-      dtype='datetime64[ns]')
-Coordinates:
-  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
-    valid_time  (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
-Attributes:
-    standard_name:  time
-    long_name:      time
 ```
 
 ---
