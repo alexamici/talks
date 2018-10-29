@@ -255,7 +255,7 @@ Attributes:
 
 ### GRIB valid_time coordinate
 
-The time the forecast is valid
+The time the forecast is valid / convenience auxiliary coordinate
 ```python
 >>> ds.valid_time
 <xarray.DataArray 'valid_time' (time: 4)>
@@ -292,6 +292,7 @@ Attributes:
 
 ### GRIB geographic coordinates
 
+Computed by *ecCodes* based on `GRIB_gridType`: `regular_ll`, `regular_gg`, etc. 
 ```python
 >>> ds.latitude
 <xarray.DataArray 'latitude' (latitude: 61)>
