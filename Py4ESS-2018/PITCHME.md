@@ -326,18 +326,11 @@ First bug report:
 ```python
 >>> ds = cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2')
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+  File "\<stdin\>", line 1, in <module>
   ...
-  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 315, in build_data_var_components
-    data_var_attrs = enforce_unique_attributes(index, data_var_attrs_keys, filter_by_keys)
-  File "/Users/amici/devel/MPY/cfgrib/cfgrib/dataset.py", line 142, in enforce_unique_attributes
-    raise DatasetBuildError(error_message, fbks)
-cfgrib.dataset.DatasetBuildError: multiple values for unique key, try re-open the file with one of:
-    filter_by_keys={'typeOfLevel': 'isobaricInhPa'}
-    filter_by_keys={'typeOfLevel': 'cloudBase'}
-    filter_by_keys={'typeOfLevel': 'cloudTop'}
-    filter_by_keys={'typeOfLevel': 'maxWind'}
-    filter_by_keys={'typeOfLevel': 'isothermZero'}
+  File ".../cfgrib/dataset.py", line 150, in enforce_unique_attributes
+    raise ValueError("multiple values for unique attribute %r: %r" % (key, values))
+ValueError: multiple values for unique attribute 'typeOfLevel': ['hybrid', 'cloudBase', 'unknown', 'cloudTop']
 ```
 
 ---
