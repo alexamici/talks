@@ -348,7 +348,7 @@ ValueError: multiple values for unique attribute
 
 - *xarray* is based on the concept of hypercubes
 - `xr.DataArray` is N-dimensional array
-- Some dimension are labeled by 1-dimensional coordinates
+- Dimensions are labeled by 1D coordinates
 - `xr.Dataset` is a container of data variables **with homogeneous coordinates**
 
 +++
