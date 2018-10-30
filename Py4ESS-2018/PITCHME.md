@@ -222,78 +222,6 @@ Attributes:
 
 +++
 
-### time coordinate
-
-Forecast reference time / initialisation time
-```python
->>> ds.time
-<xarray.DataArray 'time' (time: 4)>
-array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
-       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
-      dtype='datetime64[ns]')
-Coordinates:
-  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
-    valid_time  (time) datetime64[ns] ...
-Attributes:
-    standard_name:  forecast_reference_time
-    long_name:      initial time of forecast
-```
-
-+++
-
-### step coordinate
-
-Forecast period / leadtime
-```python
->>> ds.step
-<xarray.DataArray 'step' ()>
-array(0, dtype='timedelta64[ns]')
-Coordinates:
-    step     timedelta64[ns] 00:00:00
-Attributes:
-    standard_name:  forecast_period
-    long_name:      time since forecast_reference_time
-```
-
-+++
-
-### valid_time coordinate
-
-Valid time / convenience auxiliary coordinate
-```python
->>> ds.valid_time
-<xarray.DataArray 'valid_time' (time: 4)>
-array(['2017-01-01T00:00:00.000000000', '2017-01-01T12:00:00.000000000',
-       '2017-01-02T00:00:00.000000000', '2017-01-02T12:00:00.000000000'],
-      dtype='datetime64[ns]')
-Coordinates:
-  * time        (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
-    valid_time  (time) datetime64[ns] 2017-01-01 ... 2017-01-02T12:00:00
-Attributes:
-    standard_name:  time
-    long_name:      time
-```
-
-+++
-
-### Vertical level coordinate
-
-Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc.
-```python
->>> ds.isobaricInhPa
-<xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
-array([850., 500.])
-Coordinates:
-  * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
-Attributes:
-    units:          hPa
-    positive:       down
-    standard_name:  air_pressure
-    long_name:      pressure
-```
-
-+++
-
 ### Geographic coordinates
 
 Computed by *ecCodes* based on `GRIB_gridType`: `regular_ll`, `regular_gg`, etc. 
@@ -316,6 +244,24 @@ Attributes:
     units:          degrees_east
     standard_name:  longitude
     long_name:      longitude
+```
+
++++
+
+### Vertical level coordinate
+
+Variable name from *ecCodes* `GRIB_typeOfLevel`: `isobaricInhPa`, `surface`, `hybrid`, etc.
+```python
+>>> ds.isobaricInhPa
+<xarray.DataArray 'isobaricInhPa' (isobaricInhPa: 2)>
+array([850., 500.])
+Coordinates:
+  * isobaricInhPa  (isobaricInhPa) float64 850.0 500.0
+Attributes:
+    units:          hPa
+    positive:       down
+    standard_name:  air_pressure
+    long_name:      pressure
 ```
 
 +++
