@@ -318,7 +318,7 @@ ValueError: multiple values for unique attribute
 
 +++
 
-### Message filtering 1/2
+### Message filtering
 
 ```python
 >>> cfgrib.open_dataset('nam.t00z.awp21100.tm00.grib2',
@@ -337,32 +337,6 @@ Data variables:
     pres        (y, x) float32 ...
     gh          (y, x) float32 ...
     t           (y, x) float32 ...
-Attributes:
-    GRIB_edition:            2
-    GRIB_centre:             kwbc
-    GRIB_centreDescription:  US National Weather Service - NCEP 
-    GRIB_subCentre:          0
-    history:                 GRIB to CDM+CF via cfgrib-0.9.../ecCodes-2.8...
-```
-
-+++
-
-### Message filtering 2/2
-
-```python
->>> cfgrib.open_dataset('gfs_4_20180804_0000_000.grb2',
-...     backend_kwargs=dict(filter_by_keys={'shortName':'clwmr'}))
-<xarray.Dataset>
-Dimensions:        (isobaricInhPa: 21, latitude: 361, longitude: 720)
-Coordinates:
-    time           datetime64[ns] ...
-    step           timedelta64[ns] ...
-  * isobaricInhPa  (isobaricInhPa) float64 1e+03 975.0 950.0 ... 150.0 100.0
-  * latitude       (latitude) float64 90.0 89.5 89.0 88.5 ... -89.0 -89.5 -90.0
-  * longitude      (longitude) float64 0.0 0.5 1.0 1.5 ... 358.5 359.0 359.5
-    valid_time     datetime64[ns] ...
-Data variables:
-    clwmr          (isobaricInhPa, latitude, longitude) float32 ...
 Attributes:
     GRIB_edition:            2
     GRIB_centre:             kwbc
