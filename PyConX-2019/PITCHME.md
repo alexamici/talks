@@ -121,7 +121,7 @@ PyConX, 2019-05-03, Florence.
 @ul
 
 - Your data is *big* when it doesn't fit into the *memory* of the *larger* machine you *have*.
-- In a lot of cases *buying* a machine with *enough memory* is the most efficient way to solve your *big* data problems.
+- In a lot of cases *buying access* to a machine with *enough memory* is the most efficient way to solve your *big* data problems.
 
 @ulend
 
@@ -161,6 +161,10 @@ Dask is a flexible library for parallel computing
 ### Task schedulers
 
 ![dask-schedulers](assets/collections-schedulers.png)
+
+- Synchronous - for testing
+- Threaded and Multiprocessing - single machine
+- Distributed - multiple machines
 
 +++
 
