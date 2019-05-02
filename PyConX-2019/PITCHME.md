@@ -163,7 +163,7 @@ Dask is a flexible library for parallel computing
 
 +++
 
-### Simple MapReduce task graph
+### Simple MapReduce-like task graph
 
 ![array-simple](assets/array-1d-sum.png)
 
