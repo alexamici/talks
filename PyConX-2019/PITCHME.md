@@ -155,6 +155,12 @@ Dask is a flexible library for parallel computing
 
 ### Task graphs
 
+```
+>>> x = da.ones((15, 15), chunks=(5, 5))
+>>> x.sum(axis=0)
+```
+
+![array-sum](assets/array-sum.svg)
 
 +++
 
