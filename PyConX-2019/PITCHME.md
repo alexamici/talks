@@ -67,6 +67,12 @@ PyConX,
 
 @ulend
 
++++
+
+### Eco-system changes everything
+
+![growth_major_languages](assets/growth_major_languages.png)
+
 ---
 
 ## Python for *small* scientific data 
@@ -74,21 +80,25 @@ PyConX,
 +++
 
 
-### It's all about dedicated data types
+### It's all about dedicated data types (and bindings)
 
 @ul
 
-- numpy.ndarray, pandas.DataFrame...
+- `numpy.ndarray`, `pandas.DataFrame`...
   - C-level data types and methods
   - Compact in-memory representation of data
   - High-level views classes
-  - Fast computation of a lot of operations
+  - Fast C-level computations of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
 - remaining issues are mostly about *RAM* management
   - Python copies data a lot
   - RAM management is mostly automatic
 
 @ulend
+
+---
+
+## Python for *big* scientific data 
 
 +++
 
@@ -100,9 +110,22 @@ of the *larger* machine you *have*.
 In a lot of cases *buying* a machine with *enough memory*
 is the most efficient way to solve your *big* data problems.
 
++++
+
+### It's all about... Dask
+
+@ul
+
+- Dask is a flexible library for parallel computing in Python
+  - Dynamic task scheduling
+  -  data types
+
+@ulend
+
+
 ---
 
-## Python for *big* scientific data
+## Temp
 
 +++
 
@@ -123,27 +146,6 @@ is the most efficient way to solve your *big* data problems.
 <div class="right">
 ![cfgrib-pypi](assets/cfgrib-pypi.png)
 </div>
-
----
-
-## User journey
-
-+++
-
-### Install *ecCodes* C-library
-
-With conda
-```shell
-$ conda install eccodes
-```
-On Ubuntu
-```shell
-$ sudo apt-get install libeccodes0
-```
-On MacOS with Homebrew
-```shell
-$ brew install eccodes
-```
 
 ---
 
