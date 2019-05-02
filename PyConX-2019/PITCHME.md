@@ -151,11 +151,15 @@ Dask is a flexible library for parallel computing
 
 <div class="left">
 
+A `dask.array` is made of `numpy.ndarray` blocks
+
 ![dask-array](assets/dask-array-black-text.png)
 
 </div>
 
 <div class="right">
+
+A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ![dask-array](assets/dask-dataframe.png)
 
