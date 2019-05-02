@@ -149,18 +149,18 @@ Dask is a flexible library for parallel computing
 
 ### Block-based data types
 
-![dask-array](assets/dask-array-black-text.svg)
+![dask-array](assets/dask-array-black-text.png)
 
 +++
 
 ### Task graphs
 
 ```
->>> x = da.ones((15, 15), chunks=(5, 5))
->>> x.sum(axis=0)
+>>> x = da.ones((150000,), chunks=(50000,))
+>>> x.sum()
 ```
 
-![array-sum](assets/array-sum.svg)
+![array-sum](assets/array-1d-sum.png)
 
 +++
 
