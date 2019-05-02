@@ -21,7 +21,7 @@ PyConX,
 @ul
 
 - Data science / Big data
-  - Business Intelligence, Finance, Research & Development...
+  - Analytics, Finance, Research & Development...
   - Based on *records*
   - Prevalent technologies: R, JAVA, Hadoop, Spark...
 - Scientific computing
@@ -56,9 +56,9 @@ PyConX,
 @ul
 
 - Fast computing run-time
-  - **Apparently NOT!** Interpreted without a JIT
+- **Apparently NOT!** Interpreted without a JIT compiler
 - Memory-efficient data types
-  - **Apparently NOT!** Big native types and garbage collected
+- **Apparently NOT!** Big native types and garbage collected
 - Mature eco-systems and communities
   - Dedicated tools & libraries
     - **YES!** Numpy, Pandas, xarray, Dask...
