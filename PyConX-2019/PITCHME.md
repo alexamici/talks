@@ -149,7 +149,17 @@ Dask is a flexible library for parallel computing
 
 ### Block-based data types
 
+<div class="left">
+
 ![dask-array](assets/dask-array-black-text.png)
+
+</div>
+
+<div class="right">
+
+![dask-array](assets/dask-array-black-text.png)
+
+</div>
 
 +++
 
