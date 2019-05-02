@@ -160,6 +160,7 @@ Dask is a flexible library for parallel computing
 
 ### Task schedulers
 
+![dask-schedulers](assets/collections-schedulers.png)
 
 +++
 
