@@ -92,9 +92,9 @@ PyConX, 2019-05-03, Florence.
   - High-level views classes
   - Fast C-level computations of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
-- remaining issues are mostly about *RAM* management
-  - Python copies data a lot
-  - RAM management is mostly automatic
+- remaining issues
+  - RAM management: Python copies data a lot
+  - Parallelism: 
 
 @ulend
 
@@ -104,9 +104,9 @@ PyConX, 2019-05-03, Florence.
 
 @ul
 
-- Python is not slow
+- Python is not (that) slow
 - Python is a memory hog!
-- In real life, you will get your scientific computation terminated by the OOM killer more often than by any timeout
+- In real life, you fear the Out-Of-Memory killer more often than the wall-clock
 
 @ulend
 
@@ -222,6 +222,14 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 - A few tuning knobs and monitoring tools
 
 @ulend
+
+---
+
+## Python for *real big* scientific data 
+
++++
+
+### 
 
 ---
 
