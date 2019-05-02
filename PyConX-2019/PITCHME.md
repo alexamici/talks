@@ -127,7 +127,7 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### It's all about... Dask
+### It's all about blocks (and tasks)
 
 Dask is a flexible library for parallel computing
 
