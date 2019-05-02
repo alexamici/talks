@@ -56,9 +56,9 @@ PyConX,
 @ul
 
 - Fast computing run-time
-  - Interpreted without a JIT so, **not really!**
+  - **Not really!**: interpreted without a JIT
 - Memory-efficient data types
-  - Large native types and garbage collected so, **not really!**
+  - **Not really!**: big native types and garbage collected
 - Mature eco-systems and communities
   - Scientific tools & libraries, **YES!**: Numpy, Pandas, xarray, dask
   - Distributed computing of big data **YES!**: dask.distributed
