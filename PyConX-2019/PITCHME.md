@@ -7,7 +7,7 @@ Alessandro Amici, B-Open, Rome
 
 @snap[south small]
 PyConX,
-2019-05-02, Florence.
+2019-05-03, Florence.
 @snapend
 
 ---
@@ -39,14 +39,29 @@ PyConX,
 
 - Fast computing run-time
 - Memory-efficient data types
-- Distributed computing of big data
 - Mature eco-systems: tools and communities
+  - Distributed computing of big data
 
 @ulend
 
 ---
 
+### Python for scientific data
+
++++
+
 ### How is Python even a contender?
+
+@ul
+
+- Fast computing run-time
+  - Interpreted without a JIT so, **not really!**
+- Memory-efficient data types
+  - Large native types and garbage collected so, **not really!**
+- Mature eco-systems: tools and communities
+  - Numpy, Pandas, xarray, dask, dask.distributed, and **this changes everything!**
+
+@ulend
 
 +++
 
