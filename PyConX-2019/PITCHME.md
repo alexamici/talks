@@ -157,7 +157,7 @@ Dask is a flexible library for parallel computing
 
 <div class="right">
 
-![dask-array](assets/dask-array-black-text.png)
+![dask-array](assets/dask-dataframe.png)
 
 </div>
 
