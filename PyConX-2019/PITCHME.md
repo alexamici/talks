@@ -108,7 +108,7 @@ PyConX, 2019-05-03, Florence.
 - Python is not slow
 - Python is a memory hog!
 - In real life, you will get your scientific computation
-terminated by the OOM killer more often than by any timeout
+  terminated by the OOM killer more often than by any timeout
 
 @ulend
 
@@ -123,9 +123,9 @@ terminated by the OOM killer more often than by any timeout
 @ul
 
 - Your data is *big* when it doesn't fit into the *memory*
-of the *larger* machine you *have*.
+  of the *larger* machine you *have*.
 - In a lot of cases *buying* a machine with *enough memory*
-is the most efficient way to solve your *big* data problems.
+  is the most efficient way to solve your *big* data problems.
 
 @ulend
 
