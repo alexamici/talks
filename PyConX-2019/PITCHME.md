@@ -120,11 +120,14 @@ terminated by the OOM killer more often than by any timeout
 
 ### When is your data actually *big*?
 
-Your data is *big* when it doesn't fit into the *memory*
-of the *larger* machine you *have*.
+@ul
 
-In a lot of cases *buying* a machine with *enough memory*
+- Your data is *big* when it doesn't fit into the *memory*
+of the *larger* machine you *have*.
+- In a lot of cases *buying* a machine with *enough memory*
 is the most efficient way to solve your *big* data problems.
+
+@ulend
 
 +++
 
