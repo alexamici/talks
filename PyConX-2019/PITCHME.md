@@ -83,7 +83,6 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-
 ### It's all about dedicated data types (and bindings)
 
 @ul
@@ -109,7 +108,7 @@ PyConX, 2019-05-03, Florence.
 - Python is not slow
 - Python is a memory hog!
 - In real life, you will get your scientific computation
-terminated by the OOM killer more often than by any timeout 
+terminated by the OOM killer more often than by any timeout
 
 @ulend
 
@@ -138,7 +137,6 @@ is the most efficient way to solve your *big* data problems.
   -  data types
 
 @ulend
-
 
 ---
 
