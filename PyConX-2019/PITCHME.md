@@ -84,9 +84,9 @@ PyConX,
   - High-level views classes
   - Fast computation of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
-- remaining inefficiencies are mostly about RAM
-  - Python still copies data a lot
-  - Memory management is mostly automatic
+- remaining issues are mostly about *RAM* management
+  - Python copies data a lot
+  - RAM management is mostly automatic
 
 @ulend
 
