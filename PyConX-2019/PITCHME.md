@@ -50,7 +50,9 @@ PyConX, 2019-05-03, Florence.
 
 @ul
 
-- Apparently everybody ![growth_major_languages](assets/growth_major_languages.png)
+- Apparently everybody
+
+![growth_major_languages](assets/growth_major_languages.png)
 
 @ulend
 
