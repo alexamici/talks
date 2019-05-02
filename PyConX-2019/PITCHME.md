@@ -185,30 +185,6 @@ Dask is a flexible library for parallel computing
 
 ---
 
-## Temp
-
-+++
-
-<div class="left">
-
-@ul
-
-- ecCodes bindings via CFFI for Python 3 and PyPy
-- GRIB-level API: *FileStream*, *FileIndex* and *Message*
-- ‎‎CDM-level API: *Dataset* and *Variable*, inspired to *h5netcdf* and *netCDF4-Python*
-- *xarray* read-only backend
-- ... and more
-
-@ulend
-
-</div>
-
-<div class="right">
-![cfgrib-pypi](assets/cfgrib-pypi.png)
-</div>
-
----
-
 ## Thank you!
 
 Alessandro Amici, B-Open, Rome
