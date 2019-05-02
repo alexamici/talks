@@ -56,9 +56,9 @@ PyConX,
 @ul
 
 - Fast computing run-time
-  - **Not really!** Interpreted without a JIT compiler
+  - **Looks like a NO!** Interpreted without a JIT compiler
 - Memory-efficient data types
-  - **Not really!** Big native types and garbage collected
+  - **Looks like a NO!** Big native types and garbage collected
 - Mature eco-systems and communities
   - Dedicated tools & libraries
     - **YES!** Numpy, Pandas, xarray, Dask...
@@ -66,6 +66,10 @@ PyConX,
     - **YES!** Dask.distributed...
 
 @ulend
+
++++
+
+### 
 
 +++
 
