@@ -6,8 +6,7 @@ Alessandro Amici, B-Open, Rome
 @css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
 
 @snap[south small]
-PyConX,
-2019-05-03, Florence.
+PyConX, 2019-05-03, Florence.
 @snapend
 
 ---
@@ -45,6 +44,17 @@ PyConX,
 
 @ulend
 
++++
+
+### Who in their right mind would use Python???
+
+@ul
+
+- Apparently everybody ![growth_major_languages](assets/growth_major_languages.png)
+
+@ulend
+
+
 ---
 
 ## Python for scientific data
@@ -66,12 +76,6 @@ PyConX,
     - **YES!** Dask.distributed...
 
 @ulend
-
-+++
-
-### Eco-system changes everything
-
-![growth_major_languages](assets/growth_major_languages.png)
 
 ---
 
