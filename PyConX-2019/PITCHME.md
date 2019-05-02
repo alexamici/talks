@@ -48,12 +48,11 @@ PyConX, 2019-05-03, Florence.
 
 ### Who in their right mind would use Python???
 
-@ul
++++
 
-- Apparently everybody
-- ![growth_major_languages](assets/growth_major_languages.png)
+### Who in their right mind would use Python???
 
-@ulend
+![growth_major_languages](assets/growth_major_languages.png)
 
 ---
 
