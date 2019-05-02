@@ -153,14 +153,27 @@ Dask is a flexible library for parallel computing
 
 +++
 
-### Task graphs
+### Simple task graph
+
+![array-simple](assets/array-1d-sum.png)
 
 ```
+>>> import dask.array as da
 >>> x = da.ones((150000,), chunks=(50000,))
 >>> x.sum()
 ```
 
-![array-sum](assets/array-1d-sum.png)
++++
+
+### Complex task graph
+
+![array-complex](assets/array-xdotxT-mean-std.png)
+
+```
+>>> x = da.ones((15, 15), chunks=(5, 5))
+>>> y = (x.dot(x.T + 1) - x.mean()).std()
+```
+
 
 +++
 
