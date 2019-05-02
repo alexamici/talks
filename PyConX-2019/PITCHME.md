@@ -67,23 +67,42 @@ PyConX,
 
 @ulend
 
+---
+
+## Python for *small* scientific data 
+
 +++
 
-### 
 
-+++
+### It's all about dedicated data types
+
+@ul
+
+- numpy.ndarray, pandas.DataFrame...
+  - C-level data types and methods
+  - Compact in-memory representation of arrays and records
+  - Fast computation of a lot of operations
+  - High-level views classes
+  - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
+- remaining inefficiencies
+  - Python still copies data a lot
+  - Memory management is mostly automatic
+
+@ulend
 
 ### When is your data actually *big*?
 
-Your data is *big* when it doesn't fit the *memory*
-of the *larger* machine you have access to.
+Your data is *big* when it doesn't fit into the *memory*
+of the *larger* machine you *have*.
 
-In a lot of cases *buying* a machines with *enough memory*
-solves the *big* data problems.
+In a lot of cases *buying* a machine with *enough memory*
+is the most efficient way to solve your *big* data problems.
+
+---
+
+## Python for *big* scientific data
 
 +++
-
-### Presenting *cfgrib*
 
 <div class="left">
 
