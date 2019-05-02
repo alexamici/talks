@@ -51,7 +51,7 @@ PyConX, 2019-05-03, Florence.
 @ul
 
 - Apparently everybody
-![growth_major_languages](assets/growth_major_languages.png)
+- ![growth_major_languages](assets/growth_major_languages.png)
 
 @ulend
 
@@ -102,12 +102,14 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### The limit of Python in science
+### The real limit of Python in science
 
 @ul
 
 - Python is not slow
 - Python is a memory hog!
+- In real life, you will get your scientific computation
+terminated by the OOM killer more often than by any timeout 
 
 @ulend
 
