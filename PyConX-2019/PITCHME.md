@@ -12,7 +12,7 @@ PyConX,
 
 ---
 
-### Scientific data
+## Scientific data
 
 +++
 
@@ -22,11 +22,11 @@ PyConX,
 
 - Data science / Big data
   - Business Intelligence, Finance, Research & Development...
-  - Based on records
+  - Based on *records*
   - Prevalent technologies: JAVA, Hadoop, Spark...
 - Scientific computing
   - Physics, Engineering, Biology...
-  - Based on hyper-cubes
+  - Based on *hyper-cubes*
   - Prevalent technologies: FORTRAN, C / C++, MATLAB, HPC / MPI...
 
 @ulend
@@ -39,14 +39,15 @@ PyConX,
 
 - Fast computing run-time
 - Memory-efficient data types
-- Mature eco-systems: tools and communities
+- Mature eco-systems and communities
+  - Scientific tools & libraries
   - Distributed computing of big data
 
 @ulend
 
 ---
 
-### Python for scientific data
+## Python for scientific data
 
 +++
 
@@ -58,8 +59,9 @@ PyConX,
   - Interpreted without a JIT so, **not really!**
 - Memory-efficient data types
   - Large native types and garbage collected so, **not really!**
-- Mature eco-systems: tools and communities
-  - Numpy, Pandas, xarray, dask, dask.distributed, and **this changes everything!**
+- Mature eco-systems and communities
+  - Scientific tools & libraries, **YES!**: Numpy, Pandas, xarray, dask
+  - Distributed computing of big data **YES!**: dask.distributed
 
 @ulend
 
