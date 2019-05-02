@@ -23,7 +23,7 @@ PyConX,
 - Data science / Big data
   - Business Intelligence, Finance, Research & Development...
   - Based on *records*
-  - Prevalent technologies: JAVA, Hadoop, Spark...
+  - Prevalent technologies: R, JAVA, Hadoop, Spark...
 - Scientific computing
   - Physics, Engineering, Biology...
   - Based on *hyper-cubes*
@@ -40,7 +40,7 @@ PyConX,
 - Fast computing run-time
 - Memory-efficient data types
 - Mature eco-systems and communities
-  - Scientific tools & libraries
+  - Dedicated tools & libraries
   - Distributed computing of big data
 
 @ulend
@@ -60,7 +60,7 @@ PyConX,
 - Memory-efficient data types
   - **Not really!**: big native types and garbage collected
 - Mature eco-systems and communities
-  - Scientific tools & libraries, **YES!**: Numpy, Pandas, xarray, dask
+  - Dedicated tools & libraries, **YES!**: Numpy, Pandas, xarray, dask
   - Distributed computing of big data **YES!**: dask.distributed
 
 @ulend
