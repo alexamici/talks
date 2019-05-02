@@ -184,7 +184,6 @@ Dask is a flexible library for parallel computing
 >>> y = (x.dot(x.T + 1) - x.mean()).std()
 ```
 
-
 +++
 
 ### Task schedulers
@@ -205,6 +204,19 @@ Dask is a flexible library for parallel computing
 ```
 
 ![dask-in-action](assets/grid_search_schedule.gif)
+
++++
+
+### What's the magics of Dask
+
+@ul
+
+- Dask data types implement the native protocols
+- Dask-aware operations and data access are executed in blocks
+- Executing dask-based operations only builds the task graph
+- Requesting non-dask operations triggers the parallel execution only of the needed tasks
+
+@ulend
 
 ---
 
