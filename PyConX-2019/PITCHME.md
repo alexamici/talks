@@ -100,6 +100,17 @@ PyConX, 2019-05-03, Florence.
 
 @ulend
 
++++
+
+### The limit of Python in science
+
+@ul
+
+- Python is not slow
+- Python is a memory hog!
+
+@ulend
+
 ---
 
 ## Python for *big* scientific data 
