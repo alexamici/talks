@@ -137,12 +137,18 @@ Dask is a flexible library for parallel computing
   - `dask.array`, `dask.dataframe`
 - Scalable block-based operations
   - divided into tasks operating on blocks
-  - tasks are arranged into a graph
+  - tasks are arranged into a task graph
 - Dynamic task scheduling
-  - the whole computation becomes a task graph
+  - configurable schedulers: parallel, distributed
   - lazy and parallel computation of tasks
 
 @ulend
+
++++
+
+### Block-based dask.array
+
+![dask-array](assets/dask-array-black-text.svg)
 
 ---
 
