@@ -80,15 +80,17 @@ PyConX,
 
 - numpy.ndarray, pandas.DataFrame...
   - C-level data types and methods
-  - Compact in-memory representation of arrays and records
-  - Fast computation of a lot of operations
+  - Compact in-memory representation of data
   - High-level views classes
+  - Fast computation of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
-- remaining inefficiencies
+- remaining inefficiencies are mostly about RAM
   - Python still copies data a lot
   - Memory management is mostly automatic
 
 @ulend
+
++++
 
 ### When is your data actually *big*?
 
