@@ -129,16 +129,17 @@ PyConX, 2019-05-03, Florence.
 
 ### It's all about... Dask
 
+Dask is a flexible library for parallel computing
+
 @ul
 
-- Dask is a flexible library for parallel computing
-  - Scalable block-based data types
-    - `dask.array`, `dask.dataframe`
-  - Scalable block-based operations
-    - operations are divided into tasks operating on blocks
-    - tasks are arranged into a workflow graph
-  - Dynamic task scheduling
-    - parallel and lazy computation of tasks
+- Scalable block-based data types
+  - `dask.array`, `dask.dataframe`
+- Scalable block-based operations
+  - operations are divided into tasks operating on blocks
+  - tasks are arranged into a workflow graph
+- Dynamic task scheduling
+  - parallel and lazy computation of tasks
 
 @ulend
 
