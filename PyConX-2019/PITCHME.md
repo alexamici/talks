@@ -216,8 +216,8 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 @ul
 
 - Dask data types implement the native protocols
-- Dask-aware operations and data access work in blocks
-- Executing Dask-aware code only builds the task graph
+- Block-based operations and data access
+- Dask-aware code only builds the task graph
 - Non-Dask-aware operations trigger the execution *only* of the needed tasks
 - A few tuning knobs and monitoring tools
 
