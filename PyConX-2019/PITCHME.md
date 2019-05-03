@@ -124,9 +124,17 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### It's all about blocks (and tasks)
+### Enter Dask
 
 Dask is a flexible library for parallel computing
+
+URL: https://dask.org/
+Maintainer: Matthew Rocklin at NVIDIA
+Github: https://github.com/dask/dask
+
++++
+
+### It's all about blocks (and tasks)
 
 @ul
 
