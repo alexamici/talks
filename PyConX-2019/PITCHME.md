@@ -32,17 +32,6 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### When is your data actually *big*?
-
-@ul
-
-- The data is *big* for you when it doesn't fit into the *memory* of the *larger* machine you *have access to*
-- In a lot of cases *buying access* to a machine with *enough memory* is the most efficient way to solve your *big* data problems
-
-@ulend
-
-+++
-
 ### Scientific data fields
 
 @ul
