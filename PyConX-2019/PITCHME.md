@@ -312,11 +312,11 @@ tas = xr.open_mfdataset('ERA5-*.nc', chunks={...}).t2m
 
 # Choose a reference period and compute the reference climatology 
 tas_ref = tas.sel(time=slice('1981', '2010'))
-tas_ref_clima = tas_ref.groupby('time.month').mean('time')
+tas_ref_clima = tas_ref.groupby('time.season').mean('time')
 
 # Compute the anomaly with respect to the reference
 tas_2018 = tas.sel(time='2018')
-tas_2018_anomaly = tas_2018.groupby('time.month') - tas_ref_clima
+tas_2018_anomaly = tas_2018.groupby('time.season').mean('time') - tas_ref_clima
 ```
 
 Ready to crunch 1.357 Gb of data!
@@ -328,7 +328,7 @@ Ready to crunch 1.357 Gb of data!
 Plotting triggers the computation.
 
 ```:python
-tas_2018_anomaly.plot(col='time', col_wrap=4)
+tas_2018_anomaly.plot(col='season', col_wrap=2)
 ```
 
 ![hand-made-tas-anomaly](assets/tas-anomaly.png)
