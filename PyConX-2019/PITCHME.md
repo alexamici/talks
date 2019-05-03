@@ -21,7 +21,7 @@ PyConX, 2019-05-03, Florence.
 
 - Data size
   - small: fits into RAM
-  - non-small: fits into storage, but not into RAM
+  - medium: fits into storage, but not into RAM
   - big: needs distributed storage
 - Computing power
   - synchronous: single-core
@@ -29,10 +29,6 @@ PyConX, 2019-05-03, Florence.
   - distributed: multi-core on multi-machines
 
 @ulend
-
-+++
-
-### Buy access to bigger machines!
 
 +++
 
@@ -67,13 +63,7 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### Who in their right mind would use Python???
-
-+++
-
-### Apparently a lot of people
-
-![growth_major_languages](assets/growth_major_languages.png)
+### Buy access to bigger machines!!!
 
 ---
 
@@ -134,7 +124,7 @@ PyConX, 2019-05-03, Florence.
 
 ---
 
-## Python for *big* scientific data
+## Python for *medium* scientific data
 
 +++
 
