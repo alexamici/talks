@@ -318,7 +318,7 @@ tas_2018_seasons = tas_2018.groupby('time.season').mean('time')
 tas_2018_anomaly = tas_2018_seasons - tas_ref_clima
 ```
 
-Ready to crunch 1.357 Gb of data!
+Ready to crunch 1.4 Tb of data!
 
 +++
 
