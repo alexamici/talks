@@ -129,7 +129,9 @@ PyConX, 2019-05-03, Florence.
 Dask is a flexible library for parallel computing
 
 URL: https://dask.org/
+
 Maintainer: Matthew Rocklin at NVIDIA
+
 Github: https://github.com/dask/dask
 
 +++
