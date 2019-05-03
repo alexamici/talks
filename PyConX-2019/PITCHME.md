@@ -201,9 +201,9 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ![dask-schedulers](assets/collections-schedulers.png)
 
-- Synchronous - for testing
-- Threaded and Multiprocessing - single machine
-- Distributed - multiple machines (see later)
+- Synchronous - single-core
+- Threaded and Multiprocessing - multi-core on single-machine
+- Distributed - multi-core on multi-machines (see later)
 
 +++
 
@@ -237,7 +237,18 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 +++
 
-### 
+### Enter Dask.distributed
+
+Dask.distributed is a lightweight library for distributed computing in Python.
+
+@ul
+
+- Single scheduler / Many workers
+- Multi-core culsters and experimental multi-GPU clusters
+- Peer-to-peer data sharing
+- Data Locality
+
+@ulend
 
 ---
 
