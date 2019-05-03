@@ -247,8 +247,16 @@ Dask.distributed is a lightweight library for distributed computing in Python.
 - Multi-core culsters and experimental multi-GPU clusters
 - Peer-to-peer data sharing
 - Data Locality
+- Monitoring application
+- All with minimal code changes!
 
 @ulend
+
++++
+
+### Dask.distributed network structure
+
+![network](assets/network-inverse.png)
 
 ---
 
