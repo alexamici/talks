@@ -15,7 +15,7 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### My data size / computing power calssification
+### My data size / computing power classification
 
 @ul
 
