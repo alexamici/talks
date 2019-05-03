@@ -101,7 +101,7 @@ PyConX, 2019-05-03, Florence.
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
 - remaining issues
   - No native support for parallel execution
-  - RAM management: lots of data copies and garbage collector
+  - Lots of data copies in RAM and garbage collector
 
 @ulend
 
