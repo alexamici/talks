@@ -263,6 +263,33 @@ Dask.distributed is a lightweight library for distributed computing in Python.
 
 ---
 
+## Real world use case: Climate Change
+
++++
+
+### Has the climate changed?
+
+@ul
+
+- Data describing past data
+  - Climate Data Store - http://cds.climate.copernicus.eu
+- Choose a reference period and compute the reference statistics
+  - monthly temperature average for 1980-2010
+- Compute the *anomaly* with respect to the reference
+  - monthly temperature anomaly for 2018
+
+@ulend
+
++++
+
+### Climate data size
+
+ERA5: high resolution reanalysis of climate from 1979 to today
+
+![ERA5-sizes](assets/ERA5-sizes.png)
+
+---
+
 ## Thank you!
 
 Alessandro Amici, B-Open, Rome
