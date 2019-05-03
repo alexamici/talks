@@ -239,7 +239,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ### Enter Dask.distributed
 
-Dask.distributed is a lightweight library for distributed computing in Python.
+Dask.distributed is a lightweight library for distributed computing
 
 @ul
 
