@@ -65,10 +65,6 @@ PyConX, 2019-05-03, Florence.
 
 @ulend
 
----
-
-## Python for scientific data
-
 +++
 
 ### How is Python even a contender?
