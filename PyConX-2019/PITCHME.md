@@ -15,7 +15,7 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### My data size / computing power classification
+### Data size / computing power classification
 
 @ul
 
@@ -29,6 +29,10 @@ PyConX, 2019-05-03, Florence.
   - distributed: multi-core on multi-machines
 
 @ulend
+
++++
+
+### Buy access to bigger machines!
 
 +++
 
