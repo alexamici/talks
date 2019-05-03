@@ -317,14 +317,17 @@ tas_ref_clima = tas_ref.groupby('time.month').mean()
 # Compute the anomaly with respect to the reference
 tas_2018 = tas.sel(time='2018')
 tas_2018_anomaly = tas_2018.groupby('time.month') - tas_ref_clima
-
-# No computation until here!
-tas_2018_anomaly.plot(col='time', col_wrap=4)
 ```
+
+No computation, but ready to crunch 1.357 Gb of data.
 
 +++
 
 ### Temparature anomaly for 2018
+
+```:python
+tas_2018_anomaly.plot(col='time', col_wrap=4)
+```
 
 ![tas-anomaly](assets/tas-anomaly.png)
 
