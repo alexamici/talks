@@ -287,7 +287,7 @@ Dask.distributed is a lightweight library for distributed computing in Python.
 - Data describing past data
   - Climate Data Store - http://cds.climate.copernicus.eu
 - Choose a reference period and compute the reference *climatology*
-  - monthly temperature average for 1980-2010
+  - monthly temperature average for 1981-2010
 - Compute the *anomaly* with respect to the reference
   - monthly temperature anomaly for 2018
 
@@ -311,8 +311,8 @@ import xarray as xr
 tas = xr.open_mfdataset('ERA5-*.nc').t2m
 
 # Choose a reference period and compute the reference climatology 
-tas_ref = tas.sel(time=slice('1980', '2010'))
-tas_ref_clima = tas_ref.groupby('time.month').mean()
+tas_ref = tas.sel(time=slice('1981', '2010'))
+tas_ref_clima = tas_ref.groupby('time.month').mean('time')
 
 # Compute the anomaly with respect to the reference
 tas_2018 = tas.sel(time='2018')
