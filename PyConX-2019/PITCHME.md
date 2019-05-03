@@ -308,7 +308,7 @@ ERA5: high-resolution reanalysis of climate from 1979
 ```:python
 import xarray as xr
 
-tas = xr.open_mfdataset('ERA5-*.nc').t2m
+tas = xr.open_mfdataset('ERA5-*.nc', chunks={...}).t2m
 
 # Choose a reference period and compute the reference climatology 
 tas_ref = tas.sel(time=slice('1981', '2010'))
