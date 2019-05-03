@@ -316,7 +316,8 @@ tas_ref_clima = tas_ref.groupby('time.season').mean('time')
 
 # Compute the anomaly with respect to the reference
 tas_2018 = tas.sel(time='2018')
-tas_2018_anomaly = tas_2018.groupby('time.season').mean('time') - tas_ref_clima
+tas_2018_seasons = tas_2018.groupby('time.season').mean('time')
+tas_2018_anomaly = tas_2018_seasons - tas_ref_clima
 ```
 
 Ready to crunch 1.357 Gb of data!
