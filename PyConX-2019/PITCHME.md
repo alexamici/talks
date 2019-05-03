@@ -32,6 +32,34 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
+### Data size / computing power
+
+@ul
+
+- Data size
+  - small: fits into RAM
+  - non-small: fits into storage, but not into RAM
+  - big: needs distributed storage
+- Computing power
+  - synchronous: single-core
+  - parallel: multi-core on single-machine
+  - distributed: multi-core on multi-machines
+
+@ulend
+
++++
+
+### When is your data actually *big*?
+
+@ul
+
+- The data is *big* for you when it doesn't fit into the *memory* of the *larger* machine you *have*
+- In a lot of cases *buying access* to a machine with *enough memory* is the most efficient way to solve your *big* data problems
+
+@ulend
+
++++
+
 ### Key features of the technologies
 
 @ul
@@ -70,15 +98,15 @@ PyConX, 2019-05-03, Florence.
 - **Apparently NOT!** Big native types and garbage collected
 - Mature eco-systems and communities
   - Dedicated tools & libraries
-    - **YES!** Numpy, Pandas, xarray, Dask...
+    - **YES!** Numpy, Pandas, Xarray, Dask...
   - Distributed computing of big data
-    - **YES!** Dask.distributed...
+    - **YES!** Dask.distributed, Airflow...
 
 @ulend
 
 ---
 
-## Python for *small* scientific data 
+## Python for *small* scientific data
 
 +++
 
@@ -93,8 +121,8 @@ PyConX, 2019-05-03, Florence.
   - Fast C-level computations of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
 - remaining issues
-  - RAM management: lots of data copies and garbage collector
   - No native support for parallel execution
+  - RAM management: lots of data copies and garbage collector
 
 @ulend
 
@@ -106,25 +134,14 @@ PyConX, 2019-05-03, Florence.
 
 - When used properly
   - Python is not (that) slow
-  - But it is a memory hog!
-  - And it needs explicit parallelism
+  - But it needs explicit parallelism
+  - And it is a memory hog!
 
 @ulend
 
 ---
 
 ## Python for *big* scientific data
-
-+++
-
-### When is your data actually *big*?
-
-@ul
-
-- Your data is *big* when it doesn't fit into the *memory* of the *larger* machine you *have*.
-- In a lot of cases *buying access* to a machine with *enough memory* is the most efficient way to solve your *big* data problems.
-
-@ulend
 
 +++
 
