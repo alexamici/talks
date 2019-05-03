@@ -218,7 +218,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 +++
 
-### What's the magics of Dask
+### What's the magics of Dask?
 
 @ul
 
@@ -261,6 +261,19 @@ Dask.distributed is a lightweight library for distributed computing in Python.
 - Scheduler is a *pet* service
 - Warkers are *cattle* services
 
++++
+
+### What's the magics of Dask.distributed?
+
+@ul
+
+- Distributed computing with minimal fuss
+  - Easy cluster setup
+  - Easy code changes in simple cases
+- Can use all of the cluster RAM
+
+@ulend
+
 ---
 
 ## Real world use case: Climate Change
@@ -290,7 +303,7 @@ ERA5: high-resolution reanalysis of climate from 1979
 
 +++
 
-### Compute anomaly with xarray
+### Compute temperature anomaly with xarray
 
 ```
 import xarray as xr
@@ -305,8 +318,13 @@ tas_ref_clima = tas_ref.groupby('time.month').mean()
 tas_2018 = tas.sel(time='2018')
 tas_2018_anomaly = tas_2018.groupby('time.month') - tas_ref_clima
 
-tas_2018_anomaly.plot()
+# No computation until here!
+tas_2018_anomaly.plot(col='time', col_wrap=4)
 ```
+
++++
+
+### Temparature anomaly for 2018
 
 ---
 
