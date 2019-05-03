@@ -258,6 +258,9 @@ Dask.distributed is a lightweight library for distributed computing in Python.
 
 ![network](assets/network-inverse.png)
 
+- Scheduler is a *pet* service
+- Warkers are *cattle* services
+
 ---
 
 ## Thank you!
