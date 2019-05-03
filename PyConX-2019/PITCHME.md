@@ -285,7 +285,7 @@ Dask.distributed is a lightweight library for distributed computing
 @ul
 
 - Data describing past data
-  - Climate Data Store - http://cds.climate.copernicus.eu
+  - Climate Data Store: http://cds.climate.copernicus.eu
 - Choose a reference period and compute the reference *climatology*
   - monthly temperature average for 1981-2010
 - Compute the *anomaly* with respect to the reference
