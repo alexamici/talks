@@ -319,11 +319,13 @@ tas_2018 = tas.sel(time='2018')
 tas_2018_anomaly = tas_2018.groupby('time.month') - tas_ref_clima
 ```
 
-No computation, but ready to crunch 1.357 Gb of data.
+Ready to crunch 1.357 Gb of data!
 
 +++
 
 ### Temparature anomaly for 2018
+
+Plotting triggers the computation.
 
 ```:python
 tas_2018_anomaly.plot(col='time', col_wrap=4)
