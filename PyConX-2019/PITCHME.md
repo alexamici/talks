@@ -323,7 +323,7 @@ Ready to crunch 1.357 Gb of data!
 
 +++
 
-### Hand-made temparature anomaly for 2018
+### Hand-made temperature anomaly for 2018
 
 Plotting triggers the computation.
 
@@ -335,7 +335,7 @@ tas_2018_anomaly.plot(col='time', col_wrap=4)
 
 +++
 
-### Offical temparature anomaly for 2018
+### Official temperature anomaly for 2018
 
 European State of the Climate 2018 by the Copernicus Climate Change Service: http://climate.copernicus.eu/ESOTC
 
