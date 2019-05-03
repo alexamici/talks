@@ -178,7 +178,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ![array-simple](assets/array-1d-sum.png)
 
-```
+```:python
 >>> import dask.array as da
 >>> x = da.ones((150000,), chunks=(50000,))
 >>> x.sum()
@@ -190,7 +190,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ![array-complex](assets/array-xdotxT-mean-std.png)
 
-```
+```:python
 >>> x = da.ones((15, 15), chunks=(5, 5))
 >>> y = (x.dot(x.T + 1) - x.mean()).std()
 ```
@@ -209,7 +209,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ### Dask in action
 
-```
+```:python
 >>> X = dask.array.random((100000, 100000), chunks=(1000, 1000))
 >>> (X + X.T) - X.mean(axis=0)
 ```
