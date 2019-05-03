@@ -93,8 +93,8 @@ PyConX, 2019-05-03, Florence.
   - Fast C-level computations of a lot of operations
   - Tons of efficient tools including bindings to most C / C++ / FORTRAN libraries
 - remaining issues
-  - RAM management: Python copies data a lot
-  - Parallelism: 
+  - RAM management: lots of data copies and garbage collector
+  - No native support for parallel execution
 
 @ulend
 
@@ -104,15 +104,16 @@ PyConX, 2019-05-03, Florence.
 
 @ul
 
-- Python is not (that) slow
-- Python is a memory hog!
-- In real life, you fear the Out-Of-Memory killer more often than the wall-clock
+- When used properly
+  - Python is not (that) slow
+  - But it is a memory hog!
+  - And it needs explicit parallelism
 
 @ulend
 
 ---
 
-## Python for *big* scientific data 
+## Python for *big* scientific data
 
 +++
 
@@ -196,7 +197,7 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 - Synchronous - for testing
 - Threaded and Multiprocessing - single machine
-- Distributed - multiple machines
+- Distributed - multiple machines (see later)
 
 +++
 
