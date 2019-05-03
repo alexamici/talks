@@ -337,7 +337,7 @@ tas_2018_anomaly.plot(col='time', col_wrap=4)
 
 ### Official temperature anomaly for 2018
 
-European State of the Climate 2018 by the Copernicus Climate Change Service: http://climate.copernicus.eu/ESOTC
+European State of the Climate 2018: http://climate.copernicus.eu/ESOTC
 
 ![official-tas-anomaly](assets/C3S_ESOTC18_General_European_temp_Fig4_branded_web.png)
 
