@@ -242,7 +242,7 @@ Dask.distributed is a lightweight library for distributed computing
 @ul
 
 - Single scheduler / Many workers
-- Multi-core culsters and experimental multi-GPU clusters
+- Multi-core clusters and experimental multi-GPU clusters
 - Peer-to-peer data sharing
 - Data Locality
 - Monitoring application
@@ -257,7 +257,7 @@ Dask.distributed is a lightweight library for distributed computing
 ![network](assets/network-inverse.png)
 
 - Scheduler is a *pet* service
-- Warkers are *cattle* services
+- Workers are *cattle* services
 
 +++
 
