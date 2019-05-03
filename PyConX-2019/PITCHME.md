@@ -326,9 +326,8 @@ Ready to crunch 1.357 Gb of data!
 
 ### Hand-made temperature anomaly for 2018
 
-Plotting triggers the computation.
-
 ```:python
+# Plotting triggers the computation
 tas_2018_anomaly.plot(col='season', col_wrap=2)
 ```
 
