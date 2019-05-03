@@ -15,23 +15,6 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### Scientific data fields
-
-@ul
-
-- Data science / Big data
-  - Analytics, Finance, Research & Development...
-  - Based on *records*
-  - Prevalent technologies: R, JAVA, Hadoop, Spark...
-- Scientific computing
-  - Physics, Engineering, Biology...
-  - Based on *hyper-cubes*
-  - Prevalent technologies: FORTRAN, C / C++, MATLAB, HPC / MPI...
-
-@ulend
-
-+++
-
 ### Data size / computing power
 
 @ul
@@ -53,8 +36,25 @@ PyConX, 2019-05-03, Florence.
 
 @ul
 
-- The data is *big* for you when it doesn't fit into the *memory* of the *larger* machine you *have*
+- The data is *big* for you when it doesn't fit into the *memory* of the *larger* machine you *have access to*
 - In a lot of cases *buying access* to a machine with *enough memory* is the most efficient way to solve your *big* data problems
+
+@ulend
+
++++
+
+### Scientific data fields
+
+@ul
+
+- Data science / Big data
+  - Analytics, Finance, Research & Development...
+  - Based on *records*
+  - Prevalent technologies: R, JAVA, Hadoop, Spark...
+- Scientific computing
+  - Physics, Engineering, Biology...
+  - Based on *hyper-cubes*
+  - Prevalent technologies: FORTRAN, C / C++, MATLAB, HPC / MPI...
 
 @ulend
 
