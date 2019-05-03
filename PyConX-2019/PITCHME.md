@@ -305,7 +305,7 @@ ERA5: high-resolution reanalysis of climate from 1979
 
 ### Compute temperature anomaly with xarray
 
-```
+```:python
 import xarray as xr
 
 tas = xr.open_mfdataset('ERA5-*.nc').t2m
@@ -325,6 +325,8 @@ tas_2018_anomaly.plot(col='time', col_wrap=4)
 +++
 
 ### Temparature anomaly for 2018
+
+![tas-anomaly](assets/tas-anomaly.png)
 
 ---
 
