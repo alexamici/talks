@@ -217,12 +217,13 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 - Dask-aware code only builds the task graph
 - Non-Dask-aware operations trigger the execution *only* of the needed tasks
 - A few tuning knobs and monitoring tools
+- All with minimal code changes!
 
 @ulend
 
 ---
 
-## Python for *real big* scientific data 
+## Python for *big* scientific data 
 
 +++
 
