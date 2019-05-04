@@ -1,3 +1,4 @@
+
 ### Talks by [@alexamici](https://twitter.com/alexamici) at [B-Open](http://www.bopen.it)
 
  * 2017
