@@ -1,5 +1,16 @@
-background: assets/bg.png
 background-size: contain
 theme-override: assets/Py4ESS.css
 published: true
-theme: beige
+highlight : solarized-light
+
+theme: template
+
+theme-background : [ "linear-gradient(180deg, black 15%, #F7F2D3 15%)" ]
+theme-headline   : [ "Montserrat", "#333", "uppercase" ]
+theme-byline     : [ "Raleway", "#333", "none" ]
+theme-text       : [ "Lato", "#333", "none" ]
+theme-links      : [ "#8B743D", "#C0A86E" ]
+theme-code       : [ "Source Code Pro" ]
+theme-controls   : [ "#484848" ]
+theme-margins    : [ "0", "15px" ]
+

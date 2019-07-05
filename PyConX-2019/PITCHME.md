@@ -1,12 +1,23 @@
-
-## Meet dask and distributed the unsung heroes of Python Scientific data ecosystem
-
+---?color=#F7F2D3
+@snap[north span-100]
+## Meet dask & distributed
+### The unsung heroes of Python Scientific Data Ecosystem
+<br>
 Alessandro Amici, B-Open, Rome
+<br>
+@css[text-05](PyConX, 2019-05-03, Florence.)
+@snapend
 
-@css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
+@snap[south-west span-30 text-07]
+@fa[twitter] @alexamici
+@snapend
 
-@snap[south small]
-PyConX, 2019-05-03, Florence.
+@snap[south span-30 text-07]
+@fa[github] @alexamici
+@snapend
+
+@snap[south-east span-30 text-07]
+@fa[firefox] http://bopen.eu
 @snapend
 
 ---
@@ -15,7 +26,11 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### Data size / computing power classification
+@snap[north span-100 h4-beige]
+#### Data Size / Computing Power Classification
+@snapend
+
+<br>
 
 @ul
 
@@ -32,11 +47,15 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### Buy access to bigger machines!!!
+## Buy access to bigger machines!!!
 
 +++
 
-### Scientific data fields
+@snap[north span-100 h4-beige]
+#### Scientific Data Fields
+@snapend
+
+<br>
 
 @ul
 
@@ -53,7 +72,11 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### Key features of the technologies
+@snap[north span-100 h4-beige]
+#### Key Features of the Technologies
+@snapend
+
+<br>
 
 @ul
 
@@ -67,9 +90,11 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### How is Python even a contender?
+@snap[north span-100 h4-beige]
+#### How is Python even a Contender?
+@snapend
 
-@ul
+@ul[text-09](false)
 
 - Fast computing run-time
 - **Apparently NOT!** Interpreted without a JIT compiler
@@ -83,15 +108,23 @@ PyConX, 2019-05-03, Florence.
 
 @ulend
 
----
+---?color=linear-gradient(180deg, black 22%, #F7F2D3 22%)
 
-## Python for *small* scientific data
+@snap[north span-100 h2-beige]
+## Python
+@snapend
+
+## For *small* scientific data
 
 +++
 
-### It's all about dedicated data types (and bindings)
+@snap[north span-100 h4-beige]
+#### It's all about dedicated data types (and bindings)
+@snapend
 
-@ul
+<br>
+
+@ul[text-09]
 
 - `numpy.ndarray`, `pandas.DataFrame`...
   - C-level data types and methods
@@ -107,7 +140,9 @@ PyConX, 2019-05-03, Florence.
 
 +++
 
-### The real limit of Python in science
+@snap[north span-100 h4-beige]
+#### The real limit of Python in Science
+@snapend
 
 @ul
 
@@ -118,13 +153,19 @@ PyConX, 2019-05-03, Florence.
 
 @ulend
 
----
+---?color=linear-gradient(180deg, black 22%, #F7F2D3 22%)
 
-## Python for *medium* scientific data
+@snap[north span-100 h2-beige]
+## Python
+@snapend
 
-+++
+## For *medium* scientific data
 
-### Enter Dask
++++?color=linear-gradient(180deg, black 22%, #F7F2D3 22%)
+
+@snap[north span-100 h2-beige]
+## Enter Dask
+@snapend
 
 Dask is a flexible library for parallel computing
 
@@ -134,7 +175,11 @@ https://dask.org and https://github.com/dask/dask
 
 +++
 
-### It's all about blocks (and tasks)
+@snap[north span-100 h4-beige]
+#### It's all about Blocks (and Tasks)
+@snapend
+
+<br>
 
 @ul
 
@@ -152,29 +197,35 @@ https://dask.org and https://github.com/dask/dask
 
 +++
 
-### Block-based data types
+@snap[north span-100 h4-beige]
+#### Block-based Data Types
+@snapend
 
-<div class="left">
+@snap[west span-50 text-07]
 
 A `dask.array` is made of `numpy.ndarray` blocks
 
 ![dask-array](assets/dask-array-black-text.png)
 
-</div>
+@snapend
 
-<div class="right">
+@snap[east span-50 text-07 top-pad-4em]
 
 A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 ![dask-array](assets/dask-dataframe.png)
 
-</div>
+@snapend
 
-+++
++++?color=#F7F2D3
 
-### Simple MapReduce-like task graph
+@snap[north span-100]
+#### Simple MapReduce-like task graph
+@snapend
 
-![array-simple](assets/array-1d-sum.png)
+<br>
+
+@img[span-28 bg-beige](assets/array-1d-sum.png)
 
 ```:python
 >>> import dask.array as da
@@ -182,11 +233,15 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 >>> x.sum()
 ```
 
-+++
++++?color=#F7F2D3
 
-### Complex task graph
+@snap[north span-100]
+#### Complex Task Graph
+@snapend
 
-![array-complex](assets/array-xdotxT-mean-std.png)
+<br>
+
+@img[span-85 img-shadow bg-beige](assets/array-xdotxT-mean-std.png)
 
 ```:python
 >>> x = da.ones((15, 15), chunks=(5, 5))
@@ -195,17 +250,28 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 +++
 
-### Task schedulers
+@snap[north span-100 h4-beige]
+#### Task Schedulers
+@snapend
+
+<br>
 
 ![dask-schedulers](assets/collections-schedulers.png)
 
+<br>
+
+@ul[text-08](false)
 - Synchronous - single-core
 - Threaded and Multiprocessing - multi-core on single-machine
 - Distributed - multi-core on multi-machines (see later)
+@ulend
 
-+++
++++?color=#F7F2D3
 
-### Dask in action
+@snap[north span-100]
+#### Dask in Action
+@snapend
+
 
 ```:python
 >>> X = dask.array.random((100000, 100000), chunks=(1000, 1000))
@@ -216,7 +282,9 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 +++
 
-### What's the magics of Dask?
+@snap[north span-100 h4-beige]
+#### What's the magics of Dask?
+@snapend
 
 @ul
 
@@ -229,18 +297,24 @@ A `dask.dataframe` is made of `pandas.DataFrame` blocks
 
 @ulend
 
----
+---?color=linear-gradient(180deg, black 22%, #F7F2D3 22%)
 
-## Python for *big* scientific data 
+@snap[north span-100 h2-beige]
+## Python
+@snapend
 
-+++
+## For *big*<br>scientific data 
 
++++?color=linear-gradient(180deg, black 18%, #F7F2D3 18%)
+
+@snap[north span-100 h3-beige]
 ### Enter Dask.distributed
+@snapend
 
-Dask.distributed is a lightweight library for distributed computing
+A lightweight library for distributed computing.
 
-@ul
-
+@ul[text-09](false)
+<br>
 - Single scheduler / Many workers
 - Multi-core clusters and experimental multi-GPU clusters
 - Peer-to-peer data sharing
@@ -252,8 +326,11 @@ Dask.distributed is a lightweight library for distributed computing
 
 +++
 
-### Dask.distributed network structure
+@snap[north span-100 h4-beige]
+#### Dask.distributed Network Structure
+@snapend
 
+<br>
 ![network](assets/network-inverse.png)
 
 - Scheduler is a *pet* service
@@ -261,7 +338,9 @@ Dask.distributed is a lightweight library for distributed computing
 
 +++
 
-### What's the magics of Dask.distributed?
+@snap[north span-100 h4-beige]
+#### What's the magic of Dask.distributed?
+@snapend
 
 @ul
 
@@ -274,11 +353,19 @@ Dask.distributed is a lightweight library for distributed computing
 
 ---
 
-## Real world use case: Climate Change
+@snap[north span-100 h4-beige]
+#### Real World Use Case
+@snapend
+
+## Climate Change
 
 +++
 
-### Has the climate changed?
+@snap[north span-100 h4-beige]
+#### Has the Climate changed?
+@snapend
+
+<br>
 
 @ul
 
@@ -293,7 +380,9 @@ Dask.distributed is a lightweight library for distributed computing
 
 +++
 
-### Climate data size
+@snap[north span-100 h4-beige]
+#### Climate Data Size
+@snapend
 
 ERA5: high-resolution reanalysis of climate from 1979
 
@@ -301,7 +390,11 @@ ERA5: high-resolution reanalysis of climate from 1979
 
 +++
 
-### Compute temperature anomaly with xarray
+@snap[north span-100]
+#### Compute Temperature Anomaly with Xarray
+@snapend
+
+<br>
 
 ```:python
 import xarray as xr
@@ -318,35 +411,54 @@ tas_2018_seasons = tas_2018.groupby('time.season').mean('time')
 tas_2018_anomaly = tas_2018_seasons - tas_ref_clima
 ```
 
+@snap[south span-100 text-07 text-smallcaps]
 Ready to crunch 1.4 Tb of data!
+@snapend
 
 +++
 
-### Hand-made temperature anomaly for 2018
+@snap[north span-100]
+#### Hand-made Temperature Anomaly for 2018
+@snapend
+
+<br><br>
 
 ```:python
 # Plotting triggers the computation
 tas_2018_anomaly.plot(col='season', col_wrap=2)
 ```
 
-![hand-made-tas-anomaly](assets/tas-anomaly.png)
+@img[bg-beige](assets/tas-anomaly.png)
 
 +++
 
-### Official temperature anomaly for 2018
+@snap[north span-100 h4-beige]
+#### Official Temperature Anomaly for 2018
+@snapend
+
+<br><br>
 
 European State of the Climate 2018: http://climate.copernicus.eu/ESOTC
 
 ![official-tas-anomaly](assets/C3S_ESOTC18_General_European_temp_Fig4_branded_web.png)
 
----
+---?color=#F7F2D3
+@snap[north span-100 text-08]
+Slides:<br>https://gitpitch.com/alexamici/talks
+@snapend
 
 ## Thank you!
 
 Alessandro Amici, B-Open, Rome
 
-@css[regular](@fa[twitter] @alexamici<br>@fa[github] @alexamici<br>@fa[firefox] http://bopen.eu)
+@snap[south-west span-30 text-07]
+@fa[twitter] @alexamici
+@snapend
 
-@snap[south]
-@css[regular](Slides: https://gitpitch.com/alexamici/talks)
+@snap[south span-30 text-07]
+@fa[github] @alexamici
+@snapend
+
+@snap[south-east span-30 text-07]
+@fa[firefox] http://bopen.eu
 @snapend
